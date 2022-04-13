@@ -87,4 +87,113 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
+body {
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 6px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #19283F;
+  color: #F5F5F5;
+}
+
+.wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin: 0 auto;
+  position: relative;
+  min-width: 375px;
+  width: 375px;
+}
+
+.arrow {
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 4px;
+  border: solid #F5F5F5;
+  border-width: 0 1px 1px 0;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.down {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.right {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.left {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.up {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.header__hero {
+  font: 900 26px "Roboto", Arial, sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 0.74px #F97F29;
+}
+
+.header__subhero {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  font: 400 18px "Roboto", Arial, sans-serif;
+  line-height: 1.17em;
+  letter-spacing: 0.1em;
+  color: #F5F5F5;
+}
+
+.section__header h2 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section__header h2 span {
+  margin: 8px 0px;
+}
+
+.header__subtitle {
+  display: block;
+  font: 400 14px "Roboto", Arial, sans-serif;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #F5F5F5;
+}
+
+.header__title {
+  display: block;
+  font: 900 24px/31px "Roboto", Arial, sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #F97F29;
+}
+
+.section__offset {
+  margin: 0 auto;
+  padding: 40px 0;
+}
 /*# sourceMappingURL=style.css.map */
