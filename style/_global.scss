@@ -16,8 +16,9 @@ body {
 	flex: 1 0 auto;
 	margin: 0 auto;
 	position: relative;
-	min-width: $mq-xs;
-	width: $mq-xs;
+	width: $mq-lg;
+	// min-width: $mq-xs;
+	// width: $mq-xs;
 
 	// @include media-xs {
 	// 	width: $mq-xs;

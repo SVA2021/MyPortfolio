@@ -1,0 +1,40 @@
+.header {
+	outline: 0.5px solid red;
+}
+.header__inner {
+	margin: 0 auto;
+	width: $mq-lg;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.header__logo {
+}
+.logo {
+}
+.logo__item {
+	display: inline-block;
+}
+.header__menu {
+}
+.menu {
+}
+.menu__body {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.menu__item {
+}
+.menu__link {
+}
+.menu__bar {
+}
+.header__social {
+}
+.social {
+}
+.social__icon {
+}
