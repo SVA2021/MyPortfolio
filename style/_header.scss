@@ -1,40 +1,155 @@
+@import './variables';
+@import './mixins';
+
+
 .header {
 	outline: 0.5px solid red;
-}
-.header__inner {
+	position: fixed;
+	top: 0;
 	margin: 0 auto;
-	width: $mq-lg;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-evenly;
+	left: 50%;
+	transform: translateX(-50%);
+	// width: $mq-lg;
+	padding: 0 $offset-basic;
+	z-index: $z-index-navigation;
+	cursor: none;
+	
+	width: 100vw;
 }
-.header__logo {
-}
-.logo {
-}
-.logo__item {
-	display: inline-block;
-}
-.header__menu {
-}
-.menu {
-}
-.menu__body {
+
+.header__inner {
+	// margin: 0 auto;
+	// width: $mq-lg;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 }
+
+.header__logo {}
+
+.logo {
+	outline: 0.5px solid green;
+	// margin: $offset-basic * 2;
+	// padding: $offset-basic *2;
+
+	font-family: $font-titles;
+	font-weight: 900;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: none;
+}
+
+.logo__item {
+	display: block;
+	margin: 0 $offset-basic *4;
+	transition: all 0.2s ease-in-out;
+	font-size: 3rem;
+
+	color: transparent;
+	text-transform: uppercase;
+	text-align: center;
+
+	color: transparent;
+	-webkit-text-stroke: 1px $orange;
+
+	&:hover {
+		-webkit-text-stroke: 2px $green;
+	}
+
+}
+
+.header__menu {
+	cursor: auto;
+}
+
+.menu {
+	outline: 0.5px solid green;
+	position: relative;
+}
+
+.menu__body {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: $offset-basic *4;
+}
+
 .menu__item {
+	@include borderDefault;
+
+	margin: $offset-basic * 2;
+
+	&:hover {
+		background-color: $orange;
+		transform: scale(1.1);
+		transition: all 0.25s ease-in-out;
+	}
 }
+
 .menu__link {
+	padding: $offset-basic *2;
+	line-height: 2rem;
+	color: $light;
+	font-weight: 500;
+	text-transform: uppercase;
+
+	&:hover {
+		transition: transform 0.25s ease-in-out;
+		font-weight: 900;
+		color: $dark;
+	}
 }
-.menu__bar {
+
+.cv {
+	animation: loadCV 10s linear infinite;
+
+	&:hover {
+		animation: none;
+	}
 }
-.header__social {
+
+.menu__btn {
+	position: absolute;
+	top: 0.1em;
+	right: 0.1em;
 }
-.social {
+
+.header__social {}
+
+.social {}
+
+.social__icon {}
+
+main {
+	padding-top: 100px;
 }
-.social__icon {
+
+@keyframes loadCV {
+	0% {
+		background-color: inherit;
+		opacity: 0.15;
+	}
+
+	25% {
+		background-color: $green;
+		opacity: 0.3;
+	}
+
+	50% {
+		background-color: $orange;
+		opacity: 1;
+	}
+
+	75% {
+		background-color: $green;
+		opacity: 0.3;
+	}
+
+	100% {
+		background-color: inherit;
+		opacity: 0.15;
+	}
 }

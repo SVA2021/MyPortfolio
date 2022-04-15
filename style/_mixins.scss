@@ -39,16 +39,10 @@
 	border-width: 0 $width $width 0;
 }
 
-//******************** gradient ***********************/
+//******************** borders ***********************/
 
-@mixin gradient2color($endColor: 100px) {
-	background-image:linear-gradient(to right, $color-pr2 $endColor, $color-pr1 $endColor);
-} 
-
-@mixin gradientborder {
-	border: 1px solid;
-	border-image-slice: 1;
-	border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
+//borders
+@mixin borderDefault {
+  border: $size-default-border solid $light;
+  border-radius: $border-radius-default;
 }
-
-//******************** gradient ***********************/

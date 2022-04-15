@@ -50,7 +50,6 @@ body {
 	opacity: 0.8;
 }
 
-
 .down {
 	transform: rotate(45deg);
 }
@@ -72,40 +71,26 @@ body {
 .header {
 
 	// .header__hero
-
 	&__hero {
-		font: 900 $font-size-hero-xs $font-titles;
+		font: 900 $font-size-hero $font-titles;
 		letter-spacing: 0.1em;
 		line-height: 1.3em;
 		text-transform: uppercase;
 		text-align: center;
 		color: transparent;
-		-webkit-text-stroke: 0.74px $orange;
+		-webkit-text-stroke: 2px $orange;
+		
+	&:hover {
+		-webkit-text-stroke: 2px $green;
+	}
 	}
 
-	// .header__subhero
-
-	&__subhero {
-		display: block;
-		margin: 0 auto;
-		margin-bottom: 8px;
-		text-align: center;
-		text-transform: uppercase;
-		font: 400 $font-size-subhero-xs $font-titles;
-		line-height: 1.17em;
-		letter-spacing: 0.1em;
-		color: $light;
-	}
 }
 
 .section__header {
 	h2 {
 		margin: 0 auto;
 		text-align: center;
-
-		span {
-			margin: 8px 0px;
-		}
 	}
 }
 
@@ -139,7 +124,7 @@ body {
 
 .section__offset {
 	margin: 0 auto;
-	padding: 40px 0;
+	// padding: 40px 0;
 
 	// @include media-xs {
 	// 	padding: 60px 0;
