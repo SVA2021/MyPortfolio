@@ -15,30 +15,25 @@ body {
 .wrapper {
 	flex: 1 0 auto;
 	margin: 0 auto;
+	padding-left: 2%;
+	padding-right: 2%;
 	position: relative;
-	width: $mq-lg;
-	// min-width: $mq-xs;
-	// width: $mq-xs;
+	width: 100%;
+	min-width: $mq-xs;
 
-	// @include media-xs {
-	// 	width: $mq-xs;
-	// }
+	@include media-xs {
+		// width: $mq-xs;
+	}
 
-	// @include media-sm {
-	// 	width: $mq-sm;
-	// }
+	@include media-sm {
+		// width: $mq-sm;
+		// width: 100%;
+	}
 
-	// @include media-md {
-	// 	width: $mq-md;
-	// }
+	@include media-lg {
+		width: $mq-lg;
+	}
 
-	// @include media-lg {
-	// 	width: $mq-lg;
-	// }
-
-	// @include media-xl {
-	// 	width: $mq-xl;
-	// }
 }
 
 
