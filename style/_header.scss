@@ -10,9 +10,13 @@
 	padding: $offset-basic *2;
 	z-index: $z-index-navigation;
 	width: 100vw;
+	background-color: $dark;
+
+	left: 50%;
+	transform: translateX(-50%);
 
 	@include media-sm {
-		cursor: none;
+		// cursor: none;
 	}
 
 }
@@ -37,7 +41,7 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	cursor: none;
+	// cursor: none;
 }
 
 .logo__item {
@@ -84,17 +88,21 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	gap: $offset-basic *4;
+	gap: $offset-basic *8;
 
+	margin-top: 5vh;
 
 	@include media-sm {
+		margin-top: 0;
+		gap: $offset-basic *4;
 		flex-direction: row;
 	}
 }
 
 .menu__item {
 	@include borderDefault;
-
+	height: 10vh;
+	width: 90%;
 	margin: $offset-basic;
 	transition: all 0.3s ease-in-out;
 
@@ -102,11 +110,20 @@
 		background-color: $orange;
 		box-shadow: 2px 2px 10px $green, -2px -2px 10px $green;
 	}
+
+	@include media-sm {
+		width: auto;
+		height: auto;
+	}
 }
 
 .menu__link {
-	padding: $offset-basic;
-	line-height: 2rem;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 5vh;
+
+	line-height: 10vh;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: $light;
@@ -116,13 +133,24 @@
 		color: $dark;
 	}
 
+	@include media-sm {
+		padding: $offset-basic;
+		line-height: 2rem;
+		font-size: 16px;
+		width: auto;
+	}
+
 	@include media-lg {
 		padding: $offset-basic *2;
 	}
 }
 
 .cv {
-	animation: loadCV 10s linear infinite;
+	animation: none;
+
+	@include media-sm {
+		animation: loadCV 10s linear infinite;
+	}
 
 	&:hover {
 		animation: none;
@@ -130,6 +158,7 @@
 }
 
 .menu__btn {
+	border-radius: $border-radius-default;
 	position: absolute;
 	width: 3rem;
 	height: 3rem;
@@ -137,7 +166,7 @@
 	font-size: 2rem;
 	line-height: 3rem;
 	top: 50%;
-	right: 0rem;
+	right: 1rem;
 	transform: translateY(-50%);
 	z-index: $z-index-navigation;
 	cursor: pointer;
@@ -146,13 +175,16 @@
 		display: none;
 	}
 
+	&:hover {
+		background-color: $orange;
+	}
 }
 
 .menu__modal {
 	display: block;
 	position: fixed;
 	top: 4rem;
-	bottom: 0;
+	height: calc(100vh - 4rem);
 	left: 0;
 	right: 0;
 	z-index: $z-index-modal;
@@ -165,10 +197,6 @@
 .social {}
 
 .social__icon {}
-
-main {
-	padding-top: 100px;
-}
 
 @keyframes loadCV {
 	0% {
