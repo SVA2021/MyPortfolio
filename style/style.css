@@ -467,7 +467,6 @@ main {
 
 .hero {
   outline: 0.5px solid red;
-  height: calc(100vh - 4rem);
   margin-top: 5vw;
 }
 
@@ -532,5 +531,29 @@ main {
   .hero__profession {
     font-size: 6rem;
   }
+}
+
+.hero__social {
+  margin: 16px auto;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5%;
+}
+
+.social__icon {
+  display: block;
+  height: 5vh;
+  line-height: 5vh;
 }
 /*# sourceMappingURL=style.css.map */

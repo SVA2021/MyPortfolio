@@ -3,7 +3,7 @@
 
 .hero {
 	outline: 0.5px solid red;
-	height: calc(100vh - 4rem);
+	// height: calc(100vh - 4rem);
 	margin-top: 5vw;
 	// margin-left: $offset-basic *16;
 
@@ -74,8 +74,20 @@
 	}
 }
 
-.hero__social {}
+.hero__social {
+	margin: $offset-basic * 4 auto;
+}
 
-.social {}
+.social {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5%;
+	// justify-content: space-evenly;
+}
 
-.social__icon {}
+.social__icon {
+	display: block;
+	height: 5vh;
+	line-height: 5vh;
+}
