@@ -12,7 +12,13 @@ body {
 	color: $light;
 }
 
+main {
+	padding-top: 4rem;
+}
+
 .wrapper {
+	outline: 0.5px solid yellow;
+
 	flex: 1 0 auto;
 	margin: 0 auto;
 	padding-left: 2%;
@@ -74,10 +80,10 @@ body {
 		text-align: center;
 		color: transparent;
 		-webkit-text-stroke: 2px $orange;
-		
-	&:hover {
-		-webkit-text-stroke: 2px $green;
-	}
+
+		&:hover {
+			-webkit-text-stroke: 2px $green;
+		}
 	}
 
 }
