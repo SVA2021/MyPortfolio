@@ -19,10 +19,10 @@
 			</div>
 			<nav class="header__menu menu">
 				<ul class="menu__body">
-					<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Projects</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">About Me</a></li>
-					<li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+					<li class="menu__item"><a href="#hero" class="menu__link">Home</a></li>
+					<li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+					<li class="menu__item"><a href="#about" class="menu__link">About Me</a></li>
+					<li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
 					<li class="menu__item cv"><a href="#" class="menu__link">my CV</a></li>
 				</ul>
 			</nav>
@@ -32,7 +32,7 @@
 		</div>
 	</header>
 	<main class="wrapper">
-		<section class="hero section__offset">
+		<section class="hero section__offset" id="hero">
 			<div class="hero__name">
 				<div class="hero__word"><span class="hero__letter">S</span>ofronov</div>
 				<div class="hero__word"><span class="hero__letter">V</span>italiy</div>
@@ -46,14 +46,43 @@
 				<span class="social__icon">twitter</span>
 			</div>
 		</section>
-		<section class="section__offset">
-			my actual projects
-			my future projects??? - additional subsection
+		<section class="section__offset" id="projects">
+			<h2 class="section__header">projects</h2>
+			<div class="actual">
+				<h3 class="header__title">actual projects</h3>
+				<div class="actual__inner">
+					<div class="project__card">
+						<h4 class="project__title header__subtitle">RAW</h4>
+						<div class="project__gallery">
+							<img src="" alt="screenshot of project page" class="project__img">
+							<img src="" alt="screenshot of project page" class="project__img">
+							<img src="" alt="screenshot of project page" class="project__img">
+						</div>
+						<div class="project__technologies">
+							<span class="project__icon">github</span>
+							<span class="project__icon">sass</span>
+						</div>
+						<p class="project__description">
+							<span class="project__name">raw</span>
+							project__description
+						</p>
+						<div class="project__links">
+							<a href="" class="project__link">code</a>
+							<a href="" class="project__link">youtube</a>
+							<a href="" class="project__link">lighthouse</a>
+							<a href="" class="project__link">site</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h3 class="header__title">future projects</h3>
 		</section>
 		<section class="section__offset">
 		</section>
-		<section class="section__offset">
-			About me:
+		<section class="section__offset" id="about">
+			<h2 class="section__header">About me</h2>
+
 			my bio
 			+
 			my skills
@@ -64,6 +93,7 @@
 		</section>
 
 		<section class="section__offset">
+			<h2 class="section__header" id="contacts">contacts</h2>
 			contacts section
 			feedback form here
 		</section>

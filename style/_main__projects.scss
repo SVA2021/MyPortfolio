@@ -1,0 +1,43 @@
+.actual {}
+
+.actual__inner {}
+
+.project__card {
+	display: grid;
+	grid-template-columns: 50% 20% auto;
+	grid-template-rows: auto repeat(3, 200px);
+	grid-template-areas:
+		'title title title'
+		'gallery techno description'
+		'gallery techno description'
+		'gallery techno links';
+}
+
+.project__title {
+	grid-area: title;
+	margin: 0 auto;
+}
+
+.project__gallery {
+	grid-area: gallery;
+}
+
+.project__img {}
+
+.project__technologies {
+	grid-area: techno;
+}
+
+.project__icon {}
+
+.project__description {
+	grid-area: description;
+}
+
+.project__name {}
+
+.project__links {
+	grid-area: links;
+}
+
+.project__link {}
