@@ -10,6 +10,7 @@ body {
 	flex-direction: column;
 	background-color: $dark;
 	color: $light;
+	scroll-behavior: smooth;
 }
 
 main {
@@ -89,34 +90,41 @@ main {
 }
 
 .section__header {
-	h2 {
-		margin: 0 auto;
-		text-align: center;
+	margin: $offset-basic * 4 auto;
+	// margin: 0 auto;
+
+	font: 700 $font-size-section $font-titles;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	transition: all 0.35s ease-in-out;
+
+	&:hover {
+		letter-spacing: 0.5em;
 	}
 }
 
-.header {
-	// .header__subtitle
+.header__title {
+	margin: $offset-basic * 2 auto;
 
-	&__subtitle {
-		display: block;
-		font: 400 14px $font-titles;
-		line-height: 120%;
-		letter-spacing: 0.05em;
-		text-transform: uppercase;
-		color: $light;
+	font: 700 $font-size-title $font-titles;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: $orange;
+	transition: all 0.35s ease-in-out;
+
+	&:hover {
+		letter-spacing: 0.25em;
+		text-shadow: 1px 1px 1px $green;
 	}
+}
 
-	// .header__title
-
-	&__title {
-		display: block;
-		font: 900 24px/31px $font-titles;
-		letter-spacing: 0.1em;
-		text-transform: uppercase;
-		color: $orange;
-	}
-
+.header__subtitle {
+	font: 500 $font-size-subtitle $font-titles;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: $orange;
 }
 
 //********* buttons ***********************************//
@@ -124,72 +132,6 @@ main {
 //********* Sections ***********************************//
 
 .section__offset {
-	margin: 0 auto;
-	// padding: 40px 0;
-
-	// @include media-xs {
-	// 	padding: 60px 0;
-	// }
-
-	// @include media-sm {
-	// 	padding: 80px 0;
-	// }
-
-	// @include media-md {}
-
-	// @include media-lg {
-	// 	padding: 100px 0;
-	// }
-
-	// @include media-xl {
-	// 	padding: 140px 0;
-	// }
+	margin: 5vw auto;
+	// margin-top: 5vw;
 }
-
-// .wrapper__container {
-// 	margin: 0 auto;
-// 	width: $mq-xxs-container;
-
-// 	@include media-xs {
-// 		width: $mq-xs-container;
-// 	}
-
-// 	@include media-sm {
-// 		width: $mq-sm-container;
-// 	}
-
-// 	@include media-md {
-// 		width: $mq-md-container;
-// 	}
-
-// 	@include media-lg {
-// 		width: $mq-lg-container;
-// 	}
-
-// 	@include media-xl {
-// 		width: $mq-xl-container;
-// 	}
-// }
-
-// .wrapper__inner {
-// 	margin-top: 24px;
-
-// 	@include media-xs {
-// 	}
-
-// 	@include media-sm {
-// 	margin-top: 40px;
-// 	}
-
-// 	@include media-md {
-// 	margin-top: 60px;
-// 	}
-
-// 	@include media-lg {
-// 	margin-top: 80px;
-// 	}
-
-// 	@include media-xl {
-// 	margin-top: 180px;
-// 	}
-// }
