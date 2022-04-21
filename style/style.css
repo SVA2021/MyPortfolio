@@ -213,6 +213,27 @@ main {
   margin: 5vw auto;
 }
 
+::-webkit-scrollbar {
+  width: 1vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  border: 1px solid #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F97F29;
+  border: 1px solid #DFF296;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #DFF296;
+  border-color: #F97F29;
+}
+
 .header {
   position: fixed;
   height: 4rem;
@@ -372,6 +393,7 @@ main {
 
 @media (min-width: 1279px) {
   .menu__link {
+    line-height: 1.25rem;
     padding: 8px;
   }
 }
@@ -575,10 +597,15 @@ main {
 .project__card {
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
   -ms-grid-columns: 50% 20% auto;
       grid-template-columns: 50% 20% auto;
-  -ms-grid-rows: auto (200px)[3];
-      grid-template-rows: auto repeat(3, 200px);
+  -ms-grid-rows: auto (150px)[3];
+      grid-template-rows: auto repeat(3, 150px);
+  gap: 1vw;
       grid-template-areas: 'title title title' 'gallery techno description' 'gallery techno description' 'gallery techno links';
 }
 
@@ -595,6 +622,75 @@ main {
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: gallery;
+}
+
+.project__gallery.showFull {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10vh 10vw;
+  height: 100vh;
+  width: 100vw;
+  background-color: #F97F29;
+  z-index: 1000;
+}
+
+.project__pic {
+  outline: 1px solid green;
+  display: none;
+  -webkit-animation: fade 5s linear;
+          animation: fade 5s linear;
+}
+
+.project__pic.showSlide {
+  display: block;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.project__img {
+  outline: 1px solid yellow;
+  width: 100%;
+}
+
+.svg__icon {
+  height: 5vw;
+  width: 5vw;
+  fill: #F5F5F5;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.svg__icon:hover {
+  fill: #F97F29;
 }
 
 .project__technologies {

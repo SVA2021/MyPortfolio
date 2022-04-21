@@ -141,6 +141,7 @@
 	}
 
 	@include media-lg {
+		line-height: 1.25rem;
 		padding: $offset-basic *2;
 	}
 }
