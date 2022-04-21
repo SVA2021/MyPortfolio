@@ -19,10 +19,11 @@
 			</div>
 			<nav class="header__menu menu">
 				<ul class="menu__body">
-					<li class="menu__item"><a href="#hero" class="menu__link">Home</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
 					<li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
 					<li class="menu__item"><a href="#about" class="menu__link">About Me</a></li>
 					<li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
+					<li class="menu__item"><a href="#hero" class="menu__link">Rus</a></li>
 					<li class="menu__item cv"><a href="#" class="menu__link">my CV</a></li>
 				</ul>
 			</nav>
@@ -53,14 +54,26 @@
 				<div class="actual__inner">
 					<div class="project__card">
 						<h4 class="project__title header__subtitle">RAW</h4>
-						<div class="project__gallery">
-							<img src="" alt="screenshot of project page" class="project__img">
-							<img src="" alt="screenshot of project page" class="project__img">
-							<img src="" alt="screenshot of project page" class="project__img">
+						<div class="project__gallery" title="click to increase">
+							<picture class="project__pic">
+								<source srcset="./img/screen.webp" type="image/webp">
+								<img class="project__img" src="./img/screen.png" alt="screen main" loading="lazy">
+							</picture>
+							<picture class="project__pic">
+								<source srcset="./img/screen1.webp" type="image/webp">
+								<img class="project__img" src="./img/screen1.png" alt="screen additional" loading="lazy">
+							</picture>
+							<picture class="project__pic">
+								<source srcset="./img/screen2.webp" type="image/webp">
+								<img class="project__img" src="./img/screen2.png" alt="screen additional" loading="lazy">
+							</picture>
+							<picture class="project__pic">
+								<source srcset="./img/screen3.webp" type="image/webp">
+								<img class="project__img" src="./img/screen3.png" alt="screen additional" loading="lazy">
+							</picture>
 						</div>
 						<div class="project__technologies">
-							<span class="project__icon">github</span>
-							<span class="project__icon">sass</span>
+							<div class="project__icon">github</div>
 						</div>
 						<p class="project__description">
 							<span class="project__name">raw</span>
