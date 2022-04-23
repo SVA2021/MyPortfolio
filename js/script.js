@@ -42,3 +42,48 @@ for (const gallery of galleryArray) {
 	slideShow(imageArray);
 }
 // slideShow(imageArray);
+
+//! shake order animation tryouts
+
+const setArray = (length) => {
+	if (!length || typeof (length) !== 'number') {
+		return false;
+	}
+
+	let result = [];
+
+	for (let i = 0; i < length; i++) {
+		result.push(i);
+	}
+	return result;
+};
+
+const shakeArray = (array) => {
+	if (!Array.isArray(array)) { return false; }
+	let result = [];
+
+	while (array.length > 0) {
+		let index = Math.floor(Math.random() * array.length);
+		result.push(array[index]);
+		array.splice(index, 1);
+	}
+
+	return result;
+};
+
+const projectTechno = document.body.querySelector('.project__technologies');
+const icons = projectTechno.querySelectorAll('.project__icon');
+
+const shakeIconsOrder = (array) => {
+	if (array.length == 0) { return false; }
+
+	const orderList = shakeArray(setArray(array.length));
+
+	for (let i = 0; i < array.length; i++) {
+		const element = array[i];
+		element.style.order = String(orderList[i]);
+	}
+
+};
+
+setInterval(() => shakeIconsOrder(icons) , 5000);
