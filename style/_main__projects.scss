@@ -3,28 +3,61 @@
 .actual__inner {}
 
 .project__card {
-	display: grid;
-	align-items: center;
-	justify-items: center;
-	grid-template-columns: 50% 20% auto;
-	grid-template-rows: auto repeat(3, 150px);
-	gap: 1vw;
-	grid-template-areas:
-		'title title title'
-		'gallery techno description'
-		'gallery techno description'
-		'gallery techno links';
+	outline: 1px solid red;
+
+	margin: $offset-basic *4 auto;
+	// display: grid;
+	// align-items: center;
+	// justify-items: center;
+	// gap: 1%;
+
+	// grid-template-rows: auto repeat(3, 135px);
+	// grid-template-columns: 45% 25% auto;
+	// grid-template-rows: auto repeat(2, 135px) auto;
+	// grid-template-areas:
+	// 	'title title title'
+	// 	'gallery techno description'
+	// 	'gallery techno description'
+	// 	'gallery techno links';
+
+	@include media-sm {
+		// display: grid;
+		// align-items: center;
+		// justify-items: center;
+		// gap: 1%;
+		// grid-template-columns: 65% auto;
+		// grid-template-rows: auto 40vh repeat(2, 135px);
+		// grid-template-areas:
+		// 	'title title '
+		// 	'gallery gallery '
+		// 	'techno techno '
+		// 	'description links';
+	}
+
+	@include media-lg {
+		grid-template-columns: 45% 25% auto;
+		grid-template-rows: auto repeat(2, 135px) auto;
+		grid-template-areas:
+			'title title title'
+			'gallery techno description'
+			'gallery techno description'
+			'gallery techno links';
+	}
+
 }
 
 .project__title {
+	margin: $offset-basic *2 auto;
+	text-align: center;
 	grid-area: title;
-	margin: 0 auto;
 }
 
 .project__gallery {
+	margin: $offset-basic *2 auto;
+	width: 95%;
 	grid-area: gallery;
 
-	&.showFull{
+	&.showFull {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -78,18 +111,21 @@
 .project__img {
 	outline: 1px solid yellow;
 
-	// background-color: $light;
+	background-color: invert($light);
 	width: 100%;
+	height: calc(900vw /16);
 	// width: inherit;
 	// height: 100%;
 }
 
 .svg__icon {
-	height: 5vw;
-	width: 5vw;
+	height: 50px;
+	width: 50px;
+	// width: 5vw;
+	// width: 100%;
 
 	fill: $light;
-	transition: all 0.35s ease-in-out;
+	transition: all 0.25s ease-in-out;
 
 	&:hover {
 		fill: $orange;
@@ -97,19 +133,80 @@
 }
 
 .project__technologies {
+	margin: $offset-basic;
 	grid-area: techno;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	// gap: 5%;
 }
 
-.project__icon {}
+.project__icon {
+	outline: 1px solid yellow;
+
+	margin: $offset-basic;
+	width: 50px;
+	// width: 25%;
+	transition: order 3s linear;
+}
 
 .project__description {
 	grid-area: description;
+	margin: $offset-basic;
+	padding: $offset-basic * 2;
+	line-height: 150%;
 }
 
-.project__name {}
+.project__name {
+	color: $orange;
+	font-weight: 900;
+	letter-spacing: 0.1em;
+	font-size: 1.5rem;
+}
 
 .project__links {
+	margin: $offset-basic;
 	grid-area: links;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-.project__link {}
+.project__link {
+	@include borderDefault;
+	margin: $offset-basic *2;
+	padding: 0 $offset-basic *2;
+
+	display: inline-block;
+	// width: 96%;
+
+	text-align: center;
+	font-size: 3vh;
+
+	line-height: 6vh;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $light;
+	transition: transform 0.25s ease-in-out;
+
+	&:hover {
+		color: $dark;
+		background-color: $orange;
+	}
+
+	@include media-sm {
+		// padding: $offset-basic;
+		line-height: 3rem;
+		// font-size: 16px;
+		font-size: 1.5rem;
+		width: auto;
+	}
+
+	@include media-lg {
+		line-height: 1.25rem;
+		padding: $offset-basic *2;
+	}
+}

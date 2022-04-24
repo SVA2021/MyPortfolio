@@ -595,32 +595,29 @@ main {
 }
 
 .project__card {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  -ms-grid-columns: 50% 20% auto;
-      grid-template-columns: 50% 20% auto;
-  -ms-grid-rows: auto (150px)[3];
-      grid-template-rows: auto repeat(3, 150px);
-  gap: 1vw;
-      grid-template-areas: 'title title title' 'gallery techno description' 'gallery techno description' 'gallery techno links';
+  outline: 1px solid red;
+  margin: 16px auto;
+}
+
+@media (min-width: 1279px) {
+  .project__card {
+    -ms-grid-columns: 45% 25% auto;
+        grid-template-columns: 45% 25% auto;
+    -ms-grid-rows: auto (135px)[2] auto;
+        grid-template-rows: auto repeat(2, 135px) auto;
+        grid-template-areas: 'title title title' 'gallery techno description' 'gallery techno description' 'gallery techno links';
+  }
 }
 
 .project__title {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  margin: 8px auto;
+  text-align: center;
   grid-area: title;
-  margin: 0 auto;
 }
 
 .project__gallery {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
+  margin: 8px auto;
+  width: 95%;
   grid-area: gallery;
 }
 
@@ -678,15 +675,17 @@ main {
 
 .project__img {
   outline: 1px solid yellow;
+  background-color: #0a0a0a;
   width: 100%;
+  height: calc(900vw /16);
 }
 
 .svg__icon {
-  height: 5vw;
-  width: 5vw;
+  height: 50px;
+  width: 50px;
   fill: #F5F5F5;
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .svg__icon:hover {
@@ -694,22 +693,100 @@ main {
 }
 
 .project__technologies {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 2;
+  margin: 4px;
   grid-area: techno;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project__icon {
+  outline: 1px solid yellow;
+  margin: 4px;
+  width: 50px;
+  -webkit-transition: -webkit-box-ordinal-group 3s linear;
+  transition: -webkit-box-ordinal-group 3s linear;
+  transition: order 3s linear;
+  transition: order 3s linear, -webkit-box-ordinal-group 3s linear, -ms-flex-order 3s linear;
 }
 
 .project__description {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
   grid-area: description;
+  margin: 4px;
+  padding: 8px;
+  line-height: 150%;
+}
+
+.project__name {
+  color: #F97F29;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
 }
 
 .project__links {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
+  margin: 4px;
   grid-area: links;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project__link {
+  border: 2px solid #F5F5F5;
+  border-radius: 4px;
+  margin: 8px;
+  padding: 0 8px;
+  display: inline-block;
+  text-align: center;
+  font-size: 3vh;
+  line-height: 6vh;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F5F5F5;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.project__link:hover {
+  color: #19283F;
+  background-color: #F97F29;
+}
+
+@media (min-width: 767px) {
+  .project__link {
+    line-height: 3rem;
+    font-size: 1.5rem;
+    width: auto;
+  }
+}
+
+@media (min-width: 1279px) {
+  .project__link {
+    line-height: 1.25rem;
+    padding: 8px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
