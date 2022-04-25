@@ -3,7 +3,7 @@
 
 
 .header {
-	// outline: 0.5px solid red;
+	outline: 0.5px solid red;
 	position: fixed;
 	height: 4rem;
 	top: 0;
@@ -69,16 +69,13 @@
 	display: none;
 
 	@include media-xs {
-		// width: $mq-xs;
 	}
 
 	@include media-sm {
-		// width: $mq-sm;
 		display: block;
 	}
 
 	@include media-lg {
-		// width: $mq-lg;
 	}
 
 }
@@ -94,8 +91,12 @@
 
 	@include media-sm {
 		margin-top: 0;
-		gap: $offset-basic *4;
+		gap: $offset-basic ;
 		flex-direction: row;
+	}
+
+	@include media-lg {
+		gap: none;
 	}
 }
 
@@ -141,8 +142,9 @@
 	}
 
 	@include media-lg {
+		font-size: 1.5rem;
 		line-height: 1.25rem;
-		padding: $offset-basic *2;
+		padding: $offset-basic *2 $offset-basic *4;
 	}
 }
 
