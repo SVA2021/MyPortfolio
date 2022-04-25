@@ -4,11 +4,18 @@
 
 const headerMenu = document.querySelector('.menu');
 const headerMenuBtn = document.body.querySelector('.menu__btn');
+const menuItemList = headerMenu.querySelectorAll('.menu__item');
 
 headerMenuBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 	headerMenu.classList.toggle('menu__modal');
 });
+
+for (const item of menuItemList) {
+	item.addEventListener('click', (e) => {
+		headerMenu.classList.remove('menu__modal');
+	});
+}
 
 //*******************PROJECT **********************/
 
@@ -39,7 +46,7 @@ const slideShow = async (array) => {
 for (const gallery of galleryArray) {
 	gallery.addEventListener('click', () => gallery.classList.toggle('showFull'));
 	const imageArray = gallery.querySelectorAll('.project__pic');
-	slideShow(imageArray);
+	// slideShow(imageArray);
 }
 // slideShow(imageArray);
 
@@ -86,4 +93,4 @@ const shakeIconsOrder = (array) => {
 
 };
 
-setInterval(() => shakeIconsOrder(icons) , 5000);
+// setInterval(() => shakeIconsOrder(icons) , 15000);
