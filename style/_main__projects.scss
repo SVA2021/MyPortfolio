@@ -33,7 +33,7 @@
 
 .project__title {
 	margin: $offset-basic *2 auto;
-	text-align: center;
+	// text-align: center;
 	grid-area: title;
 
 	@include media-xl {

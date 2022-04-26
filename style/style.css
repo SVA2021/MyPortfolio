@@ -215,14 +215,16 @@ main {
 }
 
 .header__subtitle {
+  margin: 8px auto;
   font: 500 1.3rem "Roboto", Arial, sans-serif;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: center;
   color: #F97F29;
 }
 
 .section__offset {
-  margin: 5vw auto;
+  margin: 4rem auto;
   padding-top: 4rem;
 }
 
@@ -665,7 +667,6 @@ main {
 
 .project__title {
   margin: 8px auto;
-  text-align: center;
   grid-area: title;
 }
 

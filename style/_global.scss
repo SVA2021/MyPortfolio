@@ -123,9 +123,11 @@ main {
 }
 
 .header__subtitle {
+	margin: $offset-basic *2 auto;
 	font: 500 $font-size-subtitle $font-titles;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
+	text-align: center;
 	color: $orange;
 }
 
@@ -134,7 +136,7 @@ main {
 //********* Sections ***********************************//
 
 .section__offset {
-	margin: 5vw auto;
+	margin: 4rem auto;
 	padding-top: 4rem;
 }
 
