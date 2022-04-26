@@ -2,11 +2,8 @@
 @import './_mixins';
 
 .hero {
-	outline: 0.5px solid red;
-	// height: calc(100vh - 4rem);
-	// margin-top: 5vw;
-	// margin-left: $offset-basic *16;
-
+	// outline: 0.5px solid red;
+	margin: 4vw auto;
 }
 
 .hero__name {}
@@ -17,21 +14,21 @@
 	line-height: 1.3em;
 	text-transform: uppercase;
 	color: transparent;
-	-webkit-text-stroke: 2px $light;
+	-webkit-text-stroke: 1px $light;
 
 	transition: all 0.35s ease-in-out;
-	// font-size: 2rem;
-
-	@include media-xs {
-		// width: $mq-xs;
-	}
 
 	@include media-sm {
 		font-size: 4rem;
 	}
 
 	@include media-lg {
+		-webkit-text-stroke: 2px $light;
 		font-size: 6rem;
+	}
+
+	@include media-xl {
+		font-size: 8rem;
 	}
 
 	&:hover {
@@ -39,7 +36,11 @@
 		letter-spacing: 0.2em;
 
 		.hero__letter {
-			-webkit-text-stroke: 4px $orange;
+			-webkit-text-stroke: 2px $orange;
+
+			@include media-lg {
+				-webkit-text-stroke: 4px $orange;
+			}
 		}
 	}
 
@@ -49,20 +50,22 @@
 	letter-spacing: 0.15em;
 	font-size: 1.5em;
 	color: transparent;
-	-webkit-text-stroke: 4px $green;
+	-webkit-text-stroke: 1px $green;
+
+	@include media-lg {
+		-webkit-text-stroke: 2px $green;
+	}
 }
 
 .hero__profession {
 	color: $orange;
 	font: 900 2rem $font-titles;
-	// text-indent: 0rem;
 
 	transition: all 0.2s ease-in-out;
 
 	&:hover {
 		text-shadow: 1px 1px 5px $green;
 		letter-spacing: 0.1em;
-	// text-indent: 1rem;
 	}
 
 	@include media-sm {
@@ -83,7 +86,6 @@
 	flex-direction: row;
 	align-items: center;
 	gap: 5%;
-	// justify-content: space-evenly;
 }
 
 .social__icon {
