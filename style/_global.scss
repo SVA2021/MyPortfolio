@@ -94,7 +94,6 @@ main {
 
 .section__header {
 	margin: $offset-basic * 4 auto;
-	// margin: 0 auto;
 
 	font: 700 $font-size-section $font-titles;
 	text-align: center;
@@ -136,7 +135,7 @@ main {
 
 .section__offset {
 	margin: 5vw auto;
-	// margin-top: 5vw;
+	padding-top: 4rem;
 }
 
 //********* scrollbar ***********************************//
