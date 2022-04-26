@@ -3,7 +3,7 @@
 
 
 .header {
-	outline: 0.5px solid red;
+	// outline: 0.5px solid red;
 	position: fixed;
 	height: 4rem;
 	top: 0;
@@ -195,35 +195,29 @@
 	background-color: $orange;
 }
 
-.header__social {}
-
-.social {}
-
-.social__icon {}
-
 @keyframes loadCV {
 	0% {
 		background-color: inherit;
-		opacity: 0.15;
+		opacity: 0.5;
 	}
 
 	25% {
-		background-color: $green;
-		opacity: 0.3;
+		// background-color: $green;
+		opacity: 0.8;
 	}
 
 	50% {
-		background-color: $orange;
+		// background-color: $orange;
 		opacity: 1;
 	}
 
 	75% {
-		background-color: $green;
-		opacity: 0.3;
+		// background-color: $green;
+		opacity: 0.8;
 	}
 
 	100% {
 		background-color: inherit;
-		opacity: 0.15;
+		opacity: 0.5;
 	}
 }
