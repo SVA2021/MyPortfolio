@@ -2,12 +2,34 @@
 	width: 96%;
 }
 
+.about__inner {
+	// display: flex;
+	// align-items: stretch;
+	// justify-content: center;
+	// flex-direction: column;
+
+	@include media-lg {
+		display: flex;
+		// flex-direction: row;
+	}
+}
+
 .about__bio {
-	margin: $offset-basic *4 auto;
+	margin: $offset-basic *8 auto;
+	
+	@include media-lg {
+		// width: 50%;
+		font-size: 1.5rem;
+	}
+	line-height: 2rem;
 }
 
 .about__skills {
-	margin: $offset-basic *4 auto;
+	margin: $offset-basic *8 auto;
+
+	@include media-lg {
+		width: 50%;
+	}
 }
 
 .about__stats {
