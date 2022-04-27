@@ -1,0 +1,64 @@
+.about {
+	width: 96%;
+}
+
+.about__bio {
+	margin: $offset-basic *4 auto;
+}
+
+.about__skills {
+	margin: $offset-basic *4 auto;
+}
+
+.about__stats {
+	position: relative;
+	margin: $offset-basic *4 auto;
+}
+
+.about__pic {
+	width: 100%;
+}
+
+.about__img {
+	width: 100%;
+	border: 1px solid $orange;
+}
+
+.about__gallery {
+	margin: $offset-basic *4 auto;
+	position: relative;
+
+}
+
+.about__link {
+	height: 100%;
+
+	&:hover {
+		.about__tip {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+
+.about__tip {
+	position: absolute;
+	left: 50%;
+	// top: 1em;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	// transform: translateX(-50%);
+	display: inline-block;
+	padding: $offset-basic *2;
+	border: 1px solid $orange;
+	border-radius: $border-radius-default;
+	color: $orange;
+	background-color: $dark;
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+	box-shadow: 5px 5px 25px $green, -5px -5px 25px $green;
+}
