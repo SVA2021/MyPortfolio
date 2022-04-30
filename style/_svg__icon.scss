@@ -1,15 +1,14 @@
-
-.svg__icon {
+.icon__svg {
 	height: 50px;
 	width: 50px;
 
 	fill: $light;
-	transition: all 0.25s ease-in-out;
 	stroke: $light;
+	transition: all 0.25s ease-in-out;
 
 	&:hover {
-	stroke: $orange;
-	fill: $orange;
+		stroke: $orange;
+		fill: $orange;
 	}
 
 	@include media-lg {
@@ -22,4 +21,24 @@
 		width: 100px;
 	}
 
+}
+
+.icon__item {
+	margin: $offset-basic;
+	width: 50px;
+
+	@include media-lg {
+		width: 70px;
+	}
+
+	@include media-xl {
+		width: 100px;
+	}
+}
+
+.icon__set {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
