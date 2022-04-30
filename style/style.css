@@ -515,8 +515,10 @@ main {
 }
 
 .footer {
-  margin: 0 auto;
+  margin: 8px auto;
+  padding: 4px;
   text-align: center;
+  font: 500 1.7rem "Roboto", Arial, sans-serif;
 }
 
 .icon__svg {
@@ -1009,5 +1011,84 @@ main {
   font-weight: 700;
   -webkit-box-shadow: 5px 5px 25px #DFF296, -5px -5px 25px #DFF296;
           box-shadow: 5px 5px 25px #DFF296, -5px -5px 25px #DFF296;
+}
+
+.contacts__inner {
+  margin: 4px auto;
+  padding: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts__form {
+  margin: 8px;
+  padding: 4px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: 50%;
+}
+
+.contacts__links {
+  margin: 8px;
+  padding: 4px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: 30%;
+}
+
+.form__body {
+  margin: 4px auto;
+  padding: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form__item {
+  border: 2px solid #F5F5F5;
+  border-radius: 4px;
+  margin: 4px;
+  padding: 4px;
+}
+
+.form__btn {
+  border: 2px solid #F5F5F5;
+  border-radius: 4px;
+  margin: 16px auto;
+  padding: 8px;
+  width: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #19283F;
+  background-color: #DFF296;
+  font: 700 1.3rem "Roboto", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.form__btn:hover {
+  color: #F5F5F5;
+  background-color: #F97F29;
+  -webkit-box-shadow: 2px 2px 10px #DFF296, -2px -2px 10px #DFF296;
+          box-shadow: 2px 2px 10px #DFF296, -2px -2px 10px #DFF296;
 }
 /*# sourceMappingURL=style.css.map */
