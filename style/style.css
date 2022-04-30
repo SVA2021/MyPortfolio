@@ -519,32 +519,63 @@ main {
   text-align: center;
 }
 
-.svg__icon {
+.icon__svg {
   height: 50px;
   width: 50px;
   fill: #F5F5F5;
+  stroke: #F5F5F5;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-  stroke: #F5F5F5;
 }
 
-.svg__icon:hover {
+.icon__svg:hover {
   stroke: #F97F29;
   fill: #F97F29;
 }
 
 @media (min-width: 1280px) {
-  .svg__icon {
+  .icon__svg {
     height: 70px;
     width: 70px;
   }
 }
 
 @media (min-width: 1920px) {
-  .svg__icon {
+  .icon__svg {
     height: 100px;
     width: 100px;
   }
+}
+
+.icon__item {
+  margin: 4px;
+  width: 50px;
+}
+
+@media (min-width: 1280px) {
+  .icon__item {
+    width: 70px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .icon__item {
+    width: 100px;
+  }
+}
+
+.icon__set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero {
@@ -777,40 +808,15 @@ main {
 }
 
 .project__technologies {
-  margin: 4px;
   grid-area: techno;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 4px;
 }
 
-.project__icon {
-  margin: 4px;
-  width: 50px;
+.project__technologies.icon__item {
   -webkit-transition: -webkit-box-ordinal-group 3s linear;
   transition: -webkit-box-ordinal-group 3s linear;
   transition: order 3s linear;
   transition: order 3s linear, -webkit-box-ordinal-group 3s linear, -ms-flex-order 3s linear;
-}
-
-@media (min-width: 1280px) {
-  .project__icon {
-    width: 70px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .project__icon {
-    width: 100px;
-  }
 }
 
 .project__description {
