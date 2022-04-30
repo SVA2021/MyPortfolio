@@ -1,4 +1,6 @@
 .footer {
-	margin: 0 auto;
+	margin: $offset-basic * 2 auto;
+	padding: $offset-basic;
 	text-align: center;
+	font: 500 $font-size-title $font-titles;
 }
