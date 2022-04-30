@@ -1,0 +1,25 @@
+
+.svg__icon {
+	height: 50px;
+	width: 50px;
+
+	fill: $light;
+	transition: all 0.25s ease-in-out;
+	stroke: $light;
+
+	&:hover {
+	stroke: $orange;
+	fill: $orange;
+	}
+
+	@include media-lg {
+		height: 70px;
+		width: 70px;
+	}
+
+	@include media-xl {
+		height: 100px;
+		width: 100px;
+	}
+
+}
