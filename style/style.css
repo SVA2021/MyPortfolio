@@ -519,6 +519,34 @@ main {
   text-align: center;
 }
 
+.svg__icon {
+  height: 50px;
+  width: 50px;
+  fill: #F5F5F5;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  stroke: #F5F5F5;
+}
+
+.svg__icon:hover {
+  stroke: #F97F29;
+  fill: #F97F29;
+}
+
+@media (min-width: 1280px) {
+  .svg__icon {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .svg__icon {
+    height: 100px;
+    width: 100px;
+  }
+}
+
 .hero {
   margin: 4vw auto;
 }
@@ -781,32 +809,6 @@ main {
 
 @media (min-width: 1920px) {
   .project__icon {
-    width: 100px;
-  }
-}
-
-.svg__icon {
-  height: 50px;
-  width: 50px;
-  fill: #F5F5F5;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-
-.svg__icon:hover {
-  fill: #F97F29;
-}
-
-@media (min-width: 1280px) {
-  .svg__icon {
-    height: 70px;
-    width: 70px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .svg__icon {
-    height: 100px;
     width: 100px;
   }
 }
