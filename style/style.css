@@ -521,6 +521,10 @@ main {
   font: 500 1.7rem "Roboto", Arial, sans-serif;
 }
 
+.special__mark {
+  color: #F97F29;
+}
+
 .icon__svg {
   height: 50px;
   width: 50px;
