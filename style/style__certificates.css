@@ -520,4 +520,31 @@ main {
   text-align: center;
   font: 500 1.7rem "Roboto", Arial, sans-serif;
 }
+
+.special__mark {
+  color: #F97F29;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery__pic {
+  margin: 8px auto;
+  width: 45%;
+}
+
+.gallery__img {
+  width: 100%;
+}
 /*# sourceMappingURL=style__certificates.css.map */

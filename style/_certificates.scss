@@ -1,0 +1,16 @@
+.gallery {
+	display: flex;
+	// flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.gallery__pic {
+	margin: $offset-basic * 2 auto;
+	width: 45%;
+}
+
+.gallery__img {
+	width: 100%;
+}
