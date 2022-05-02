@@ -1,4 +1,6 @@
 .icon__svg {
+	margin: $offset-basic;
+	display: block;
 	height: 50px;
 	width: 50px;
 
@@ -21,19 +23,6 @@
 		width: 100px;
 	}
 
-}
-
-.icon__item {
-	margin: $offset-basic;
-	width: 50px;
-
-	@include media-lg {
-		width: 70px;
-	}
-
-	@include media-xl {
-		width: 100px;
-	}
 }
 
 .icon__set {
