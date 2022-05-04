@@ -3,21 +3,16 @@
 
 
 .header {
-	// outline: 0.5px solid red;
 	position: fixed;
 	height: 4rem;
 	top: 0;
-	padding: $offset-basic *2;
+	padding: $offset-basic *2 0;
 	z-index: $z-index-navigation;
-	width: 100vw;
+	width: 100%;
 	background-color: $dark;
 
 	left: 50%;
 	transform: translateX(-50%);
-
-	@include media-sm {
-		// cursor: none;
-	}
 
 }
 
@@ -28,7 +23,6 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		// width: $mq-sm;
 	}
 
 }
@@ -41,7 +35,6 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	// cursor: none;
 }
 
 .logo__item {
@@ -68,15 +61,13 @@
 	position: relative;
 	display: none;
 
-	@include media-xs {
-	}
+	@include media-xs {}
 
 	@include media-sm {
 		display: block;
 	}
 
-	@include media-lg {
-	}
+	@include media-lg {}
 
 }
 
@@ -85,13 +76,13 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	gap: $offset-basic *8;
+	// gap: $offset-basic *8;
 
 	margin-top: 5vh;
 
 	@include media-sm {
 		margin-top: 0;
-		gap: $offset-basic ;
+		gap: $offset-basic;
 		flex-direction: row;
 	}
 
@@ -102,7 +93,7 @@
 
 .menu__item {
 	@include borderDefault;
-	height: 10vh;
+	// height: 8vh;
 	width: 90%;
 	margin: $offset-basic;
 	transition: all 0.3s ease-in-out;
@@ -121,10 +112,11 @@
 .menu__link {
 	display: inline-block;
 	width: 100%;
+	padding: $offset-basic *4;
 	text-align: center;
-	font-size: 5vh;
+	font-size: 4vh;
 
-	line-height: 10vh;
+	// line-height: 8vh;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: $light;
@@ -149,37 +141,43 @@
 }
 
 .cv {
-	animation: none;
+	background-color: $green;
+	border-color: $orange;
 
-	@include media-sm {
-		animation: loadCV 10s linear infinite;
+	.menu__link {
+		color: $dark;
 	}
 
 	&:hover {
-		animation: none;
+		border-color: $dark;
 	}
 }
 
 .menu__btn {
+	display: block;
+	padding: $offset-basic;
 	border-radius: $border-radius-default;
 	position: absolute;
 	width: 3rem;
 	height: 3rem;
-	text-align: center;
-	font-size: 2rem;
-	line-height: 3rem;
+	// text-align: center;
+	// font-size: 2rem;
+	// line-height: 3rem;
 	top: 50%;
 	right: 1rem;
 	transform: translateY(-50%);
 	z-index: $z-index-navigation;
 	cursor: pointer;
 
+	fill: $light;
+
 	@include media-sm {
 		display: none;
 	}
 
 	&:hover {
-		background-color: $orange;
+		fill: $orange;
+		// background-color: $orange;
 	}
 }
 
@@ -193,31 +191,4 @@
 	z-index: $z-index-modal;
 
 	background-color: $orange;
-}
-
-@keyframes loadCV {
-	0% {
-		background-color: inherit;
-		opacity: 0.5;
-	}
-
-	25% {
-		// background-color: $green;
-		opacity: 0.8;
-	}
-
-	50% {
-		// background-color: $orange;
-		opacity: 1;
-	}
-
-	75% {
-		// background-color: $green;
-		opacity: 0.8;
-	}
-
-	100% {
-		background-color: inherit;
-		opacity: 0.5;
-	}
 }
