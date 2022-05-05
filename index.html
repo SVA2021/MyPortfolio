@@ -413,13 +413,18 @@
 			<div class="contacts__inner">
 
 				<div class="contacts__form form__wrapper">
-					<form class="form__body" action="https://smartforms.dev/submit/626ce7227a195017922e26e2" method="POST">
-						<label class="form__label header__subtitle" for="name">Name</label>
-						<input class="form__item" type="text" name="name" required>
-						<label class="form__label header__subtitle" for="email">email</label>
-						<input class="form__item" type="email" name="email" required>
-						<label class="form__label header__subtitle" for="message">message</label>
-						<textarea class="form__item" rows="5" type="text" name="message" required></textarea>
+					<form class="form__body" name="contacts" action="#">
+						<!-- <form class="form__body" action="https://smartforms.dev/submit/626ce7227a195017922e26e2" method="POST"> -->
+						<label class="form__label" for="name">Name<sup class="special__mark">*</sup></label>
+						<input class="form__item" placeholder=" " type="text" name="name" minlength="3" required>
+						<label class="form__label" for="email">
+							email<sup class="special__mark">*</sup>
+							<span class="form__tooltip">put correct email</span>
+						</label>
+						<input class="form__item" placeholder=" " type="email" name="email" required>
+						<label class="form__label" for="message">message<sup class="special__mark">*</sup></label>
+						<textarea class="form__item" placeholder=" " minlength="5" maxlength="240" rows="5" type="text"
+							name="message" required></textarea>
 						<button class="form__btn" type="submit">Send</button>
 					</form>
 				</div>
