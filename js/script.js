@@ -120,7 +120,6 @@ emailInput.addEventListener('blur', (e) => {
 	if (!isValid) {
 		emailTip.classList.add('form__error');
 		emailInput.classList.add('form__invalid');
-		emailInput.focus();
 		return false;
 	}
 	emailInput.classList.remove('form__invalid');
