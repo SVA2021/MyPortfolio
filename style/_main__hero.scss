@@ -79,17 +79,14 @@
 
 .hero__social {
 	margin: $offset-basic * 4 auto;
-}
-
-.social {
+	
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	gap: 5%;
+	flex-wrap: wrap;
 }
 
-.social__icon {
-	display: block;
-	height: 5vh;
-	line-height: 5vh;
+.hero__item {
+	margin: $offset-basic *2;
+}
+.hero__link {
 }

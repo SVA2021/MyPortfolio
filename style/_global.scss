@@ -5,12 +5,25 @@ body {
 	margin: 0 auto;
 	height: 100%;
 	padding: 0 6px;
-	font-size: $html-font-size;
 	display: flex;
 	flex-direction: column;
 	background-color: $dark;
 	color: $light;
 	scroll-behavior: smooth;
+	font-size: $html-font-size;
+
+
+	// @include media-sm {
+	// 	font-size: $html-font-size-sm;
+	// }
+
+	// @include media-lg {
+	// 	font-size: $html-font-size-lg;
+	// }
+
+	// @include media-xl {
+	// 	font-size: $html-font-size-xl;
+	// }
 }
 
 main {
@@ -136,8 +149,14 @@ main {
 //********* Sections ***********************************//
 
 .section__offset {
-	margin: 4rem auto;
-	padding-top: 4rem;
+
+	margin: 2rem auto;
+	padding-top: 2rem;
+
+	@include media-lg {
+		margin: 4rem auto;
+		padding-top: 4rem;
+	}
 }
 
 //********* scrollbar ***********************************//
