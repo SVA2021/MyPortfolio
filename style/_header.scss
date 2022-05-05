@@ -158,12 +158,11 @@
 }
 
 .menu__btn {
-	display: block;
-	padding: $offset-basic;
+	// padding: $offset-basic;
 	border-radius: $border-radius-default;
 	position: absolute;
-	width: 3rem;
-	height: 3rem;
+	// width: 3rem;
+	// height: 3rem;
 	// text-align: center;
 	// font-size: 2rem;
 	// line-height: 3rem;
@@ -173,12 +172,25 @@
 	z-index: $z-index-navigation;
 	cursor: pointer;
 
-	fill: $light;
+	// fill: $light;
 
 	@include media-sm {
 		display: none;
 	}
 
+	// &:hover {
+	// 	fill: $orange;
+	// 	// background-color: $orange;
+	// }
+}
+
+.menu__btn--svg{
+	padding: $offset-basic;
+	
+	width: 3rem;
+	height: 3rem;
+	fill: $light;
+	
 	&:hover {
 		fill: $orange;
 		// background-color: $orange;

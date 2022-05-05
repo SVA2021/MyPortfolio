@@ -100,7 +100,8 @@ const shakeIconsOrder = (array) => {
 const contactForm = document.forms.contacts;
 // const nameInput = contactForm.elements.name;
 // const messageInput = contactForm.elements.message;
-const emailInput = contactForm.elements.email;
+// const emailInput = contactForm.elements.email;
+const emailInput = contactForm.elements.eMail;
 const emailTip = contactForm.querySelector('.form__tooltip');
 // console.log(emailTip);
 // console.log(nameInput.validity.valid);

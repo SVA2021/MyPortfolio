@@ -123,11 +123,11 @@
 	margin: $offset-basic *4 auto;
 	// margin: $offset-basic *2;
 	padding: $offset-basic;
-	// flex: 1 0 auto;
-	width: 90%;
+	flex: 1 0 auto;
+	// width: 90%;
 
 	@include media-sm {
-		width: 40%;
+		// width: 45%;
 	}
 
 	// display: flex;
@@ -143,25 +143,31 @@
 
 .social__body {
 	display: grid;
-
 	grid-template-columns: 1fr;
 	grid-auto-rows: 1fr;
 	justify-items: flex-start;
 
-	@include media-lg {
-		grid-template-columns: 1fr 1fr;
-		font-size: 1.25rem;
+	@include media-sm {
+		grid-template-columns: 1fr;
 	}
 
 	@include media-lg {
-		font-size: 2rem;
+		grid-template-columns: 1fr 1fr;
+		// font-size: 1.25rem;
 	}
+
+	// @include media-xl {
+	// 	font-size: 2rem;
+	// }
 
 }
 
 .social__item {
-	margin: $offset-basic * 2;
-	font-size: 1.5rem;
+	margin: $offset-basic;
+	padding: $offset-basic;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 
 	&:hover {
 		color: $orange;
@@ -170,10 +176,11 @@
 
 .social__link {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
-	flex-wrap: wrap;
-
+	justify-content: center;
+	flex-wrap: nowrap;
+	width: 70px;
 	color: $light;
 	transition: all 0.25s ease-in-out;
 
@@ -185,6 +192,10 @@
 			fill: $orange;
 		}
 	}
+
+	@include media-lg {
+		width: 100px;
+	}
 }
 
 .social__svg {
@@ -192,8 +203,8 @@
 	width: 25px;
 
 	@include media-lg {
-		width: 35px;
-		height: 35px;
+		// width: 35px;
+		// height: 35px;
 	}
 
 
@@ -206,12 +217,22 @@
 
 .social__span {
 	margin: $offset-basic;
-	padding: $offset-basic;
 	text-transform: capitalize;
+	font-size: 1rem;
+	flex: 1 0 auto;
 }
 
 .social__data {
+	display: block;
 	margin: $offset-basic;
-	padding: $offset-basic;
 	font-family: $font-titles;
+	font-size: 1.25rem;
+
+	@include media-sm {
+		font-size: 1.5rem;
+	}
+
+	@include media-xl {
+		font-size: 2rem;
+	}
 }

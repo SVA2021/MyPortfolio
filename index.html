@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="SVA portfolio page" />
 	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -160,10 +161,12 @@
 					<li class="menu__item cv"><a href="./cv.txt" class="menu__link" download>my CV</a></li>
 				</ul>
 			</nav>
-			<svg class="menu__btn" viewBox="0 0 448 512">
-				<path
-					d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
-			</svg>
+			<div class="menu__btn" role="button" aria-expanded="false" aria-label="expand navigation menu">
+				<svg aria-hidden="true" class="menu__btn--svg" viewBox="0 0 448 512">
+					<path
+						d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+				</svg>
+			</div>
 
 		</div>
 	</header>
@@ -181,6 +184,7 @@
 						<svg class="icon__svg">
 							<use href="#telegram"></use>
 						</svg>
+						<span class="hero__span">telegram</span>
 					</a>
 				</li>
 				<li class="hero__item">
@@ -188,6 +192,7 @@
 						<svg class="icon__svg ">
 							<use href="#skype"></use>
 						</svg>
+						<span class="hero__span">skype</span>
 					</a>
 				</li>
 				<li class="hero__item">
@@ -195,6 +200,7 @@
 						<svg class="icon__svg ">
 							<use href="#github"></use>
 						</svg>
+						<span class="hero__span">github</span>
 					</a>
 				</li>
 			</ul>
@@ -209,7 +215,7 @@
 						<div class="project__gallery" title="click to increase">
 							<picture class="project__pic showSlide">
 								<source srcset="./img/screen.webp" type="image/webp">
-								<img class="project__img" src="./img/screen.png" alt="screen main" loading="lazy">
+								<img class="project__img" src="./img/screen.png" alt="project main screen" loading="lazy">
 							</picture>
 							<picture class="project__pic">
 								<source srcset="./img/screen1.webp" type="image/webp">
@@ -337,13 +343,13 @@
 			<div class="about__inner">
 
 				<div class="about__bio">
-					<h4 class="header__subtitle">biography</h4>
+					<h3 class="header__subtitle">biography</h3>
 					<p>My name is Vitaliy and I'm 36 y.o. self-taught frontend developer</p>
 					<p>Previously I worked in automotive industry as Process Engineer of new projects about 10 years</p>
 				</div>
 
 				<div class="about__skills">
-					<h4 class="header__subtitle">skills</h4>
+					<h3 class="header__subtitle">skills</h3>
 
 					<div class="icon__set">
 						<svg class="icon__svg">
@@ -416,20 +422,22 @@
 					<form class="form__body" name="contacts" action="#">
 						<!-- <form class="form__body" action="https://smartforms.dev/submit/626ce7227a195017922e26e2" method="POST"> -->
 						<label class="form__label" for="name">Name<sup class="special__mark">*</sup></label>
-						<input class="form__item" placeholder=" " type="text" name="name" minlength="3" required>
-						<label class="form__label" for="email">
+						<input class="form__item" placeholder=" " type="text" id="name" minlength="3" required aria-required="true"
+							aria-invalid="true">
+						<label class="form__label" for="eMail">
 							email<sup class="special__mark">*</sup>
 							<span class="form__tooltip">put correct email</span>
 						</label>
-						<input class="form__item" placeholder=" " type="email" name="email" required>
+						<input class="form__item" placeholder=" " type="email" id="eMail" required aria-required="true"
+							aria-invalid="true">
 						<label class="form__label" for="message">message<sup class="special__mark">*</sup></label>
-						<textarea class="form__item" placeholder=" " minlength="5" maxlength="240" rows="5" type="text"
-							name="message" required></textarea>
+						<textarea class="form__item" placeholder=" " minlength="5" maxlength="240" rows="5" type="text" id="message"
+							required aria-required="true" aria-invalid="true">
+						</textarea>
 						<button class="form__btn" type="submit">Send</button>
 					</form>
 				</div>
 				<div class="contacts__links social">
-					<!-- <div class="icon__set social"> -->
 
 					<ul class="social__body">
 						<li class="social__item">
@@ -438,8 +446,8 @@
 									<use href="#telegram"></use>
 								</svg>
 								<span class="social__span">telegram</span>
-								<span class="social__span">SVA_1985</span>
 							</a>
+							<span class="social__data">SVA_1985</span>
 						</li>
 						<li class="social__item">
 							<a href="" class="social__link">
@@ -447,8 +455,8 @@
 									<use href="#skype"></use>
 								</svg>
 								<span class="social__span">skype</span>
-								<span class="social__span">Vitaliy S.</span>
 							</a>
+							<span class="social__data">Vitaliy S.</span>
 						</li>
 						<li class="social__item">
 							<a href="" class="social__link">
@@ -456,8 +464,8 @@
 									<use href="#github"></use>
 								</svg>
 								<span class="social__span">github</span>
-								<span class="social__span">SVA2021</span>
 							</a>
+							<span class="social__data">SVA2021</span>
 						</li>
 						<li class="social__item">
 							<a href="" class="social__link">
@@ -465,8 +473,8 @@
 									<use href="#viber"></use>
 								</svg>
 								<span class="social__span">viber</span>
-								<span class="social__span">+79966236425</span>
 							</a>
+							<span class="social__data">+79966236425</span>
 						</li>
 						<li class="social__item">
 							<a href="" class="social__link">
@@ -474,8 +482,8 @@
 									<use href="#phone"></use>
 								</svg>
 								<span class="social__span">phone</span>
-								<span class="social__span">+79966236425</span>
 							</a>
+							<span class="social__data">+79966236425</span>
 						</li>
 						<li class="social__item">
 							<a href="" class="social__link">
@@ -483,52 +491,10 @@
 									<use href="#email"></use>
 								</svg>
 								<span class="social__span">e-mail</span>
-								<span class="social__data">sofronov.vit@gmail.com</span>
 							</a>
+							<span class="social__data">sofronov.vit@gmail.com</span>
 						</li>
-						<!-- <li class="social__item">
-							<a href="" class="social__link">
-								<svg class="icon__svg social__svg">
-									<use href="#telegram"></use>
-								</svg>
-								<span class="social__span">my telega</span>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="https://join.skype.com/invite/AuQqdGcSFYyj" class="social__link">
-								<svg class="icon__svg social__svg">
-									<use href="#skype"></use>
-								</svg>
-								<span class="social__span">my telega</span>
-							</a>
-						</li> -->
 					</ul>
-					<!-- <svg class="icon__svg">
-						<use href="#telegram"></use>
-					</svg>
-					<svg class="icon__svg">
-						<use href="#email"></use>
-					</svg>
-					<svg class="icon__svg">
-						<use href="#viber"></use>
-					</svg>
-					<svg class="icon__svg">
-						<use href="#skype"></use>
-					</svg>
-					<svg class="icon__svg">
-						<use href="#youtube"></use>
-					</svg>
-					<svg class="icon__svg">
-						<use href="#github"></use>
-					</svg>
-					<svg class="icon__svg">
-						<use href="#twitter"></use>
-					</svg>
-					<svg class="icon__svg">
-						<use href="#phone"></use>
-					</svg> -->
-
-					<!-- </div> -->
 				</div>
 			</div>
 
