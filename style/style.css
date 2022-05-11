@@ -943,7 +943,7 @@ main {
 .about__img {
   width: 100%;
   border: 1px solid #F97F29;
-  aspect-ratio: 14 / 9;
+  aspect-ratio: 4;
 }
 
 .about__gallery {
@@ -1061,6 +1061,10 @@ main {
 .form__item:valid {
   background-color: #DFF296;
   border: 4px solid #DFF296;
+}
+
+.form__text {
+  resize: vertical;
 }
 
 .form__invalid {

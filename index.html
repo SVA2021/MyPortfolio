@@ -158,7 +158,8 @@
 					<li class="menu__item"><a href="#about" class="menu__link">About Me</a></li>
 					<li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
 					<li class="menu__item"><a href="#hero" class="menu__link">Rus</a></li>
-					<li class="menu__item cv"><a href="./CV_Sofronov_Vitaliy_Frontend_Developer__060522.pdf" class="menu__link" download>my CV</a></li>
+					<li class="menu__item cv"><a href="./CV_Sofronov_Vitaliy_Frontend_Developer__060522.pdf" class="menu__link"
+							download>my CV</a></li>
 				</ul>
 			</nav>
 			<div class="menu__btn" role="button" aria-expanded="false" aria-label="expand navigation menu">
@@ -419,8 +420,8 @@
 			<div class="contacts__inner">
 
 				<div class="contacts__form form__wrapper">
-					<form class="form__body" name="contacts" action="#">
-						<!-- <form class="form__body" action="https://smartforms.dev/submit/626ce7227a195017922e26e2" method="POST"> -->
+					<form class="form__body" name="contacts" action="#" autocomplete="off">
+						<!-- <form class="form__body" name="contacts" autocomplete="off" action="https://smartforms.dev/submit/626ce7227a195017922e26e2" method="POST"> -->
 						<label class="form__label" for="name">Name<sup class="special__mark">*</sup></label>
 						<input class="form__item" placeholder=" " type="text" id="name" minlength="3" required aria-required="true"
 							aria-invalid="true">
@@ -431,9 +432,8 @@
 						<input class="form__item" placeholder=" " type="email" id="eMail" required aria-required="true"
 							aria-invalid="true">
 						<label class="form__label" for="message">message<sup class="special__mark">*</sup></label>
-						<textarea class="form__item" placeholder=" " minlength="5" maxlength="240" rows="5" type="text" id="message"
-							required aria-required="true" aria-invalid="true">
-						</textarea>
+						<textarea class="form__item form__text" id="message" minlength="1" maxlength="240" rows="5" placeholder=" "
+							required aria-required="true" aria-invalid="true"></textarea>
 						<button class="form__btn" type="submit">Send</button>
 					</form>
 				</div>

@@ -68,6 +68,10 @@
 
 }
 
+.form__text{
+	resize: vertical;
+}
+
 .form__invalid {
 	color: $orange;
 	box-shadow: 2px 2px 10px $orange, -2px -2px 10px $orange;
