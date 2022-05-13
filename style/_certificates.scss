@@ -2,7 +2,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 .gallery__img {
@@ -11,7 +11,7 @@
 }
 
 .gallery__item {
-	margin: $offset-basic * 2 auto;
+	margin: $offset-basic * 2;
 	position: relative;
 
 	border: 1px solid $orange;

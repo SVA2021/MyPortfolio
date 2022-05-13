@@ -26,7 +26,21 @@
 				<span class="logo__item">V</span>
 				<span class="logo__item">A</span>
 			</div>
-			<nav class="header__menu menu">
+			<nav class="header__menu menu" role="navigation">
+				<ul class="menu__body">
+					<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+					<!-- <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+					<li class="menu__item"><a href="#about" class="menu__link">About Me</a></li>
+					<li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
+					<li class="menu__item"><a href="#hero" class="menu__link">Rus</a></li> -->
+					<li class="menu__item cv"><a href="./CV_Sofronov_Vitaliy_Frontend_Developer__060522.pdf" class="menu__link"
+							download>my CV</a></li>
+					<li class="menu__item">
+						<a onclick="window.close()" href="#" class="menu__link">Close tab</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- <nav class="header__menu menu">
 				<ul class="menu__body">
 					<li class="menu__item"><a href="./index.html" class="menu__link">Home</a></li>
 					<li class="menu__item cv">
@@ -36,7 +50,13 @@
 						<a onclick="window.close()" href="#" class="menu__link">Close tab</a>
 					</li>
 				</ul>
-			</nav>
+			</nav> -->
+			<div class="menu__btn" role="button" aria-expanded="false" aria-label="expand navigation menu">
+				<svg aria-hidden="true" class="menu__btn--svg" viewBox="0 0 448 512">
+					<path
+						d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+				</svg>
+			</div>
 		</div>
 	</header>
 
@@ -47,10 +67,87 @@
 			<ul class="gallery">
 				<li class="gallery__item">
 					<a class="gallery__link" target="_blank" href="https://gb.ru/certificates/1761564">
-						<p class="gallery__caption">HTML&CSS<br>Сложный уровень</p>
+						<p class="gallery__caption">HTML&CSS<br>Advanced level</p>
 						<picture>
-							<!-- <source srcset="./img/screen.webp" type="image/webp"> -->
-							<img class="gallery__img" loading="lazy" src="./img/certificates/gb/gb_base_300.png"
+							<source srcset="./img/certificates/gb/gb_card_bg_300.webp" type="image/webp">
+							<img class="gallery__img" loading="lazy" src="./img/certificates/gb/gb_card_bg_300.png"
+								alt="geekbrains Certificate">
+						</picture>
+						<p class="gallery__tooltip">see on geekbrains</p>
+					</a>
+				</li>
+				<li class="gallery__item">
+					<a class="gallery__link" target="_blank" href="https://gb.ru/certificates/1399063">
+						<p class="gallery__caption">HTML&CSS<br>Interactive course</p>
+						<picture>
+							<source srcset="./img/certificates/gb/gb_card_bg_300.webp" type="image/webp">
+							<img class="gallery__img" loading="lazy" src="./img/certificates/gb/gb_card_bg_300.png"
+								alt="geekbrains Certificate">
+						</picture>
+						<p class="gallery__tooltip">see on geekbrains</p>
+					</a>
+				</li>
+				<li class="gallery__item">
+					<a class="gallery__link" target="_blank" href="https://gb.ru/certificates/1172067">
+						<p class="gallery__caption">JavaScript.<br>Beginner level</p>
+						<picture>
+							<source srcset="./img/certificates/gb/gb_card_bg_300.webp" type="image/webp">
+							<img class="gallery__img" loading="lazy" src="./img/certificates/gb/gb_card_bg_300.png"
+								alt="geekbrains Certificate">
+						</picture>
+						<p class="gallery__tooltip">see on geekbrains</p>
+					</a>
+				</li>
+				<li class="gallery__item">
+					<a class="gallery__link" target="_blank" href="https://gb.ru/certificates/1054705">
+						<p class="gallery__caption">Getting Started with JavaScript</p>
+						<picture>
+							<source srcset="./img/certificates/gb/gb_card_bg_300.webp" type="image/webp">
+							<img class="gallery__img" loading="lazy" src="./img/certificates/gb/gb_card_bg_300.png"
+								alt="geekbrains Certificate">
+						</picture>
+						<p class="gallery__tooltip">see on geekbrains</p>
+					</a>
+				</li>
+				<li class="gallery__item">
+					<a class="gallery__link" target="_blank" href="https://gb.ru/certificates/1001572">
+						<p class="gallery__caption">Intensive Software Testing</p>
+						<picture>
+							<source srcset="./img/certificates/gb/gb_card_bg_300.webp" type="image/webp">
+							<img class="gallery__img" loading="lazy" src="./img/certificates/gb/gb_card_bg_300.png"
+								alt="geekbrains Certificate">
+						</picture>
+						<p class="gallery__tooltip">see on geekbrains</p>
+					</a>
+				</li>
+				<li class="gallery__item">
+					<a class="gallery__link" target="_blank" href="https://gb.ru/certificates/995787">
+						<p class="gallery__caption">Programming basics<br>Beginner</p>
+						<picture>
+							<source srcset="./img/certificates/gb/gb_card_bg_300.webp" type="image/webp">
+							<img class="gallery__img" loading="lazy" src="./img/certificates/gb/gb_card_bg_300.png"
+								alt="geekbrains Certificate">
+						</picture>
+						<p class="gallery__tooltip">see on geekbrains</p>
+					</a>
+				</li>
+				<li class="gallery__item">
+					<a class="gallery__link" target="_blank" href="https://gb.ru/certificates/1348639">
+						<p class="gallery__caption">Basics of JavaScript programming</p>
+						<picture>
+							<source srcset="./img/certificates/gb/gb_card_bg_300.webp" type="image/webp">
+							<img class="gallery__img" loading="lazy" src="./img/certificates/gb/gb_card_bg_300.png"
+								alt="geekbrains Certificate">
+						</picture>
+						<p class="gallery__tooltip">see on geekbrains</p>
+					</a>
+				</li>
+				<li class="gallery__item">
+					<a class="gallery__link" target="_blank" href="https://gb.ru/certificates/1399037">
+						<p class="gallery__caption">English language.<br>Pre-intermediate</p>
+						<picture>
+							<source srcset="./img/certificates/gb/gb_card_bg_300.webp" type="image/webp">
+							<img class="gallery__img" loading="lazy" src="./img/certificates/gb/gb_card_bg_300.png"
 								alt="geekbrains Certificate">
 						</picture>
 						<p class="gallery__tooltip">see on geekbrains</p>
@@ -62,11 +159,11 @@
 			<h3 class="header__title">sololearn.com</h3>
 			<ul class="gallery">
 				<li class="gallery__item">
-					<a class="gallery__link" href="https://www.sololearn.com/Certificate/1097-20193310/jpg/">
+					<a class="gallery__link" target="_blank" href="https://www.sololearn.com/Certificate/1014-20193310/jpg/">
 						<p class="gallery__caption">JavaScript</p>
 						<picture>
-							<!-- <source srcset="./img/screen.webp" type="image/webp"> -->
-							<img class="gallery__img" loading="lazy" src="./img/certificates/sl/cert-1014-20193310.jpg"
+							<source srcset="./img/certificates/sl/origin/cert-1014-20193310.webp" type="image/webp">
+							<img class="gallery__img" loading="lazy" src="./img/certificates/sl/origin/cert-1014-20193310.png"
 								alt="sololearn javascript Certificate">
 						</picture>
 						<p class="gallery__tooltip">see on sololearn</p>
@@ -112,7 +209,7 @@
 
 	</main>
 	<footer class="footer">SVA 2022<sup class="special__mark">©</sup></footer>
-	<!-- <script src="./js/script.js"></script> -->
+	<script src="./js/script_header.js"></script>
 </body>
 
 </html>
