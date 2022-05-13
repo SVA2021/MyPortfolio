@@ -31,7 +31,7 @@ main {
 }
 
 .wrapper {
-	outline: 0.5px solid yellow;
+	// outline: 0.5px solid yellow;
 
 	flex: 1 0 auto;
 	margin: 0 auto;
@@ -115,7 +115,11 @@ main {
 	transition: all 0.35s ease-in-out;
 
 	&:hover {
-		letter-spacing: 0.5em;
+		letter-spacing: 0.25em;
+
+		@include media-sm {
+			letter-spacing: 0.5em;
+		}
 	}
 }
 
