@@ -31,6 +31,10 @@ main {
 	padding-bottom: 4rem;
 }
 
+a:focus{
+	box-shadow: 2px 2px 10px $light, -2px -2px 10px $light;
+}
+
 .wrapper {
 	// outline: 0.5px solid yellow;
 
