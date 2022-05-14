@@ -510,6 +510,12 @@ main {
   fill: #F97F29;
 }
 
+.icon__svg:focus {
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 10px #F97F29, -2px -2px 10px #F97F29;
+          box-shadow: 2px 2px 10px #F97F29, -2px -2px 10px #F97F29;
+}
+
 @media (min-width: 1280px) {
   .icon__svg {
     height: 70px;
