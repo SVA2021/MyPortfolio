@@ -83,8 +83,13 @@
 .sololearn {
 
 	.gallery__item {
-		width: 45%;
+		width: 96%;
+
+		@include media-sm {
+			width: 45%;
+		}
 	}
+
 	.gallery__img {
 		aspect-ratio: 1754/1238;
 	}

@@ -108,6 +108,7 @@ body {
 
 main {
   padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .wrapper {
@@ -587,7 +588,13 @@ main {
 }
 
 .sololearn .gallery__item {
-  width: 45%;
+  width: 96%;
+}
+
+@media (min-width: 767px) {
+  .sololearn .gallery__item {
+    width: 45%;
+  }
 }
 
 .sololearn .gallery__img {
