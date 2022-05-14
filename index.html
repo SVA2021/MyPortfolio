@@ -395,19 +395,35 @@
 				<h4 class="header__subtitle">GitHub stats</h4>
 				<a target="_blank" href="https://github.com/SVA2021" class="about__link">
 					<picture class="about__pic">
-						<!-- <source srcset="./img/screen3.webp" type="image/webp"> -->
-						<img class="about__img github-stats" src="./img/github_stats_1300.png" alt="stats" loading="lazy">
+						<source media="(max-width: 420px)" srcset="./img/certificates/github_stats_360.webp" type="image/webp">
+						<source media="(max-width: 420px)" srcset="./img/certificates/github_stats_360.webp" type="image/png">
+						<source media="(max-width: 800px)" srcset="./img/certificates/github_stats_720.webp" type="image/webp">
+						<source media="(max-width: 800px)" srcset="./img/certificates/github_stats_720.png" type="image/png">
+						<source srcset="./img/certificates/github_stats_1300.webp" type="image/webp">
+						<img class="about__img certificates" src="./img/certificates/github_stats_1300.png" alt="GitHub stats"
+							loading="lazy">
 					</picture>
 					<span class="about__tip">see GitHub profile</span>
 				</a>
 			</div>
 
-			<div class="about__gallery">
+			<div class="about__stats">
 				<h4 class="header__subtitle">certificates</h4>
 				<a target="_blank" href="./certificates.html" class="about__link">
 					<picture class="about__pic">
+						<source media="(max-width: 420px)" srcset="./img/certificates/certificates_combo_360.webp"
+							type="image/webp">
+						<source media="(max-width: 420px)" srcset="./img/certificates/certificates_combo_360.png" type="image/png">
+						<source media="(max-width: 800px)" srcset="./img/certificates/certificates_combo_600.webp"
+							type="image/webp">
+						<source media="(max-width: 800px)" srcset="./img/certificates/certificates_combo_600.png" type="image/png">
+						<source media="(max-width: 1450px)" srcset="./img/certificates/certificates_combo_1200.webp"
+							type="image/webp">
+						<source media="(max-width: 1450px)" srcset="./img/certificates/certificates_combo_1200.png"
+							type="image/png">
 						<source srcset="./img/certificates/certificates_combo_1800.webp" type="image/webp">
-						<img class="about__img certificates" src="./img/certificates_combo_1800.png" alt="certificates" loading="lazy">
+						<img class="about__img certificates" src="./img/certificates/certificates_combo_1800.png"
+							alt="certificates combo" loading="lazy">
 					</picture>
 					<span class="about__tip">see all in new window</span>
 				</a>
