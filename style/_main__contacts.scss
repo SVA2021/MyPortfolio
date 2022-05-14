@@ -68,7 +68,7 @@
 
 }
 
-.form__text{
+.form__text {
 	resize: vertical;
 }
 
@@ -149,7 +149,6 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-auto-rows: 1fr;
-	justify-items: flex-start;
 
 	@include media-sm {
 		grid-template-columns: 1fr;
@@ -157,34 +156,35 @@
 
 	@include media-lg {
 		grid-template-columns: 1fr 1fr;
-		// font-size: 1.25rem;
 	}
-
-	// @include media-xl {
-	// 	font-size: 2rem;
-	// }
 
 }
 
 .social__item {
 	margin: $offset-basic;
-	padding: $offset-basic;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	padding: $offset-basic *2;
+
+	border-radius: $border-radius-section;
+	// display: flex;
+	// flex-direction: row;
+	// align-items: center;
 
 	&:hover {
-		color: $orange;
+		box-shadow: 2px 2px 10px $green, -2px -2px 10px $green;
+	}
+	&:focus-within{
+		box-shadow: 2px 2px 10px $light, -2px -2px 10px $light;
 	}
 }
 
 .social__link {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: nowrap;
-	width: 70px;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
+	// justify-content: center;
+
+	// flex-wrap: nowrap;
+	// width: 70px;
 	color: $light;
 	transition: all 0.25s ease-in-out;
 
@@ -198,8 +198,15 @@
 	}
 
 	@include media-lg {
-		width: 100px;
+		// width: 100px;
 	}
+
+	display: grid;
+	grid-template-columns: 70px auto;
+	grid-template-areas: "icon data"
+	"title data";
+	align-items: center;
+	justify-items: center;
 }
 
 .social__svg {
@@ -207,27 +214,23 @@
 	width: 25px;
 
 	@include media-lg {
-		// width: 35px;
-		// height: 35px;
-	}
-
-
-	@include media-lg {
 		width: 50px;
 		height: 50px;
 	}
 
+	grid-area: icon;
 }
 
-.social__span {
+.social__title {
 	margin: $offset-basic;
 	text-transform: capitalize;
 	font-size: 1rem;
-	flex: 1 0 auto;
+
+	grid-area: title;
+	// flex: 1 0 auto;
 }
 
 .social__data {
-	display: block;
 	margin: $offset-basic;
 	font-family: $font-titles;
 	font-size: 1.25rem;
@@ -239,4 +242,7 @@
 	@include media-xl {
 		font-size: 2rem;
 	}
+
+	grid-area: data;
+	justify-self: flex-start;
 }
