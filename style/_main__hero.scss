@@ -94,6 +94,8 @@
 
 .hero__item {
 	margin: $offset-basic *2 $offset-basic *8;
+	padding: $offset-basic;
+	border-radius: $border-radius-default;
 	transition: all 0.25s ease-in-out;
 
 	.hero__link {
@@ -106,5 +108,21 @@
 		.hero__link {
 			color: $orange;
 		}
+
+		.icon__svg {
+			stroke: $orange;
+			fill: $orange;
+		}
 	}
+
+	&:focus{
+		box-shadow: 2px 2px 10px $orange, -2px -2px 10px $orange;
+	}
+}
+
+.hero__link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
