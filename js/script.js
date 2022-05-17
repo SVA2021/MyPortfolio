@@ -79,7 +79,7 @@ const shakeArray = (array) => {
 };
 
 const projectTechno = document.body.querySelector('.project__technologies');
-const icons = projectTechno.querySelectorAll('.project__icon');
+const icons = projectTechno.querySelectorAll('.icon__svg');
 
 const shakeIconsOrder = (array) => {
 	if (array.length == 0) { return false; }
