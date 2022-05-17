@@ -20,8 +20,8 @@ for (const item of menuItemList) {
 //*******************PROJECT **********************/
 
 const galleryArray = document.body.querySelectorAll('.project__gallery');
-// const gallery = document.body.querySelector('.project__gallery');
 
+// const gallery = document.body.querySelector('.project__gallery');
 // gallery.addEventListener('click', () => gallery.classList.toggle('showFull'));
 
 const slideShow = async (array) => {
@@ -46,7 +46,7 @@ const slideShow = async (array) => {
 for (const gallery of galleryArray) {
 	gallery.addEventListener('click', () => gallery.classList.toggle('showFull'));
 	const imageArray = gallery.querySelectorAll('.project__pic');
-	// slideShow(imageArray);
+	slideShow(imageArray);
 }
 // slideShow(imageArray);
 
@@ -93,7 +93,7 @@ const shakeIconsOrder = (array) => {
 
 };
 
-// setInterval(() => shakeIconsOrder(icons) , 15000);
+setInterval(() => shakeIconsOrder(icons) , 15000);
 
 //*******************FORM VALIDATION **********************/
 
