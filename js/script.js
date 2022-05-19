@@ -24,14 +24,15 @@ const galleryArray = document.body.querySelectorAll('.project__gallery');
 // const gallery = document.body.querySelector('.project__gallery');
 // gallery.addEventListener('click', () => gallery.classList.toggle('showFull'));
 
-const slideShow = async (array) => {
+const slideShow = async (array, interval) => {
+	if (!interval) return false;
 
 	for (let i = 0; i < array.length;) {
 		let item = array[i];
 
 		item.classList.add('showSlide');
 		let promise = new Promise((resolve, reject) => {
-			setTimeout(() => resolve(item), 5000);
+			setTimeout(() => resolve(item), interval);
 		});
 		let result = await promise;
 		result.classList.remove('showSlide');
@@ -46,7 +47,7 @@ const slideShow = async (array) => {
 for (const gallery of galleryArray) {
 	gallery.addEventListener('click', () => gallery.classList.toggle('showFull'));
 	const imageArray = gallery.querySelectorAll('.project__pic');
-	slideShow(imageArray);
+	slideShow(imageArray, 5000);
 }
 // slideShow(imageArray);
 
