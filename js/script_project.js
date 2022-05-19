@@ -34,3 +34,4 @@ const setGallery = (qty, name, wrapperDivID) => {
 }
 
 setGallery(9, 'css_edu', 'css_edu');
+setGallery(6, 'raw', 'raw');
