@@ -8,14 +8,18 @@
  * @returns {fullfilled div with gallery or pictures of project}
  * @NB_1 pictures must be in placed as in template folder 
  * @NB_2 this script must be placed BEFORE main script 
+ * @NB_3 "0" picture recomment be with performance test result
+ * @NB_4 "1" picture recomment be main screen of project
  */
 const setGallery = (qty, name, wrapperDivID) => {
 
 	if (!qty) return false;
 	let wrapper = document.getElementById(wrapperDivID);
 
-	for (let i = 1; i <= qty; i++) {
-		let alt = (i === 1) ? `main screen` : `screenshot`;
+	for (let i = 0; i < qty; i++) {
+
+		let alt = (i === 0) ? `test results` :
+			(i === 1) ? `main screen` : `additional screenshot`;
 
 		wrapper.insertAdjacentHTML('beforeend',
 			`<picture class="project__pic">
