@@ -210,6 +210,12 @@ a:focus {
   }
 }
 
+@media (min-width: 1900px) {
+  .section__header {
+    font-size: 4rem;
+  }
+}
+
 .header__title {
   margin: 8px auto;
   font: 700 1.7rem "Roboto", Arial, sans-serif;
@@ -226,6 +232,12 @@ a:focus {
   text-shadow: 1px 1px 1px #DFF296;
 }
 
+@media (min-width: 1900px) {
+  .header__title {
+    font-size: 3.4rem;
+  }
+}
+
 .header__subtitle {
   margin: 8px auto;
   font: 500 1.3rem "Roboto", Arial, sans-serif;
@@ -233,6 +245,12 @@ a:focus {
   text-transform: uppercase;
   text-align: center;
   color: #F97F29;
+}
+
+@media (min-width: 1900px) {
+  .header__subtitle {
+    font-size: 2.6rem;
+  }
 }
 
 .section__offset {

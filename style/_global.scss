@@ -52,7 +52,6 @@ a:focus{
 
 	@include media-sm {
 		width: $mq-sm;
-		// width: 100%;
 	}
 
 	@include media-lg {
@@ -126,6 +125,10 @@ a:focus{
 			letter-spacing: 0.5em;
 		}
 	}
+	
+	@include media-xl {
+		font-size: $font-size-section * 2;
+	}
 }
 
 .header__title {
@@ -142,6 +145,10 @@ a:focus{
 		letter-spacing: 0.25em;
 		text-shadow: 1px 1px 1px $green;
 	}
+	
+	@include media-xl {
+		font-size: $font-size-title * 2;
+	}
 }
 
 .header__subtitle {
@@ -151,6 +158,10 @@ a:focus{
 	text-transform: uppercase;
 	text-align: center;
 	color: $orange;
+	
+	@include media-xl {
+		font-size: $font-size-subtitle * 2;
+	}
 }
 
 //********* buttons ***********************************//
