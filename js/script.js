@@ -51,7 +51,7 @@ for (const gallery of galleryArray) {
 // slideShow(imageArray);
 
 //! shake order animation tryouts
-
+/*
 const setArray = (length) => {
 	if (!length || typeof (length) !== 'number') {
 		return false;
@@ -94,7 +94,7 @@ const shakeIconsOrder = (array) => {
 };
 
 setInterval(() => shakeIconsOrder(icons) , 15000);
-
+*/
 //*******************FORM VALIDATION **********************/
 
 const contactForm = document.forms.contacts;
