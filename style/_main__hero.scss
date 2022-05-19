@@ -78,11 +78,12 @@
 }
 
 .hero__social {
-	margin: $offset-basic * 4 auto;
+	margin: $offset-basic auto;
 
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	// flex-wrap: wrap;
+
 }
 
 .hero__span {
@@ -93,7 +94,7 @@
 }
 
 .hero__item {
-	margin: $offset-basic *2 $offset-basic *8;
+	margin: $offset-basic *2 $offset-basic *4;
 	padding: $offset-basic;
 	border-radius: $border-radius-default;
 	transition: all 0.25s ease-in-out;
@@ -115,8 +116,12 @@
 		}
 	}
 
-	&:focus{
+	&:focus {
 		box-shadow: 2px 2px 10px $orange, -2px -2px 10px $orange;
+	}
+
+	@include media-sm {
+		margin: $offset-basic *2 $offset-basic *8;
 	}
 }
 
