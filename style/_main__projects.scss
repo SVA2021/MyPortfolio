@@ -17,7 +17,6 @@
 		justify-items: center;
 		gap: 1%;
 		grid-template-columns: 50% 20% auto;
-		// grid-template-rows: auto repeat(2, 135px) auto;
 		grid-template-areas:
 			'title title title'
 			'gallery techno description'
@@ -26,19 +25,14 @@
 	}
 
 	@include media-xl {
-		// grid-template-columns: 65% 15% auto;
+		margin: 4vw auto;
 	}
 
 }
 
 .project__title {
 	margin: $offset-basic *2 auto;
-	// text-align: center;
 	grid-area: title;
-
-	@include media-xl {
-		font-size: 2rem;
-	}
 }
 
 .project__gallery {
@@ -118,11 +112,16 @@
 
 .project__technologies {
 	grid-area: techno;
-	margin: $offset-basic;
+	// margin: $offset-basic *4 auto;
+	margin: 2vw auto;
 
-	.icon__svg {
-		transition: order 1s ease-out;
+	@include media-lg {
+		margin: 0 auto;
 	}
+
+	// .icon__svg {
+	// 	transition: order 1s ease-out;
+	// }
 
 }
 
@@ -155,11 +154,11 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	flex-wrap: wrap;
 }
 
 .project__link {
 	@include borderDefault;
+	border-radius: $border-radius-section;
 	margin: $offset-basic *2;
 	padding: 0 $offset-basic *2;
 	display: inline-block;
@@ -170,7 +169,7 @@
 	line-height: 2rem;
 	font-weight: 700;
 	text-transform: uppercase;
-	
+
 	color: $light;
 	transition: transform 0.25s ease-in-out;
 
@@ -181,14 +180,21 @@
 	}
 
 	@include media-sm {
+		padding: $offset-basic *2;
 		width: auto;
-		font-size: 1rem;
-		line-height: 2rem;
+		font-size: 1.5rem;
+		line-height: 2.5rem;
 	}
 
 	@include media-lg {
-		padding: $offset-basic *2;
-		line-height: 1.25rem;
+		// padding: $offset-basic *2;
+		// line-height: 1.25rem;
+	}
+
+	@include media-xl {
+		padding: $offset-basic *4;
+		font-size: 2rem;
+		line-height: 3rem;
 	}
 }
 
