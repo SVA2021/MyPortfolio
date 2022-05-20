@@ -212,6 +212,7 @@ a:focus {
 
 @media (min-width: 1900px) {
   .section__header {
+    margin: 2vw auto;
     font-size: 4rem;
   }
 }
@@ -234,6 +235,7 @@ a:focus {
 
 @media (min-width: 1900px) {
   .header__title {
+    margin: 2vw auto;
     font-size: 3.4rem;
   }
 }
@@ -249,6 +251,7 @@ a:focus {
 
 @media (min-width: 1900px) {
   .header__subtitle {
+    margin: 2vw auto;
     font-size: 2.6rem;
   }
 }
@@ -1012,6 +1015,12 @@ a:focus {
   margin: 16px auto;
 }
 
+@media (min-width: 1240px) {
+  .about__stats {
+    margin-top: 4vw;
+  }
+}
+
 .about__pic {
   width: 100%;
 }
@@ -1215,6 +1224,12 @@ a:focus {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+}
+
+@media (min-width: 1900px) {
+  .contacts__links {
+    margin-left: 5vw;
+  }
 }
 
 .social__body {

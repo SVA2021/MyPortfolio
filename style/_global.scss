@@ -127,6 +127,7 @@ a:focus{
 	}
 	
 	@include media-xl {
+		margin: 2vw auto;
 		font-size: $font-size-section * 2;
 	}
 }
@@ -147,6 +148,7 @@ a:focus{
 	}
 	
 	@include media-xl {
+		margin: 2vw auto;
 		font-size: $font-size-title * 2;
 	}
 }
@@ -160,6 +162,7 @@ a:focus{
 	color: $orange;
 	
 	@include media-xl {
+		margin: 2vw auto;
 		font-size: $font-size-subtitle * 2;
 	}
 }

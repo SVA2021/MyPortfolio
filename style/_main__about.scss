@@ -36,6 +36,10 @@
 .about__stats {
 	position: relative;
 	margin: $offset-basic *4 auto;
+
+	@include media-lg {
+		margin-top: 4vw;
+	}
 }
 
 .about__pic {
