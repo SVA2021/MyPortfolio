@@ -16,7 +16,7 @@
 		align-items: stretch;
 		justify-items: center;
 		gap: 1%;
-		grid-template-columns: 50% 20% auto;
+		grid-template-columns: 45% 15% auto;
 		grid-template-areas:
 			'title title title'
 			'gallery techno description'
@@ -112,16 +112,11 @@
 
 .project__technologies {
 	grid-area: techno;
-	// margin: $offset-basic *4 auto;
 	margin: 2vw auto;
 
 	@include media-lg {
 		margin: 0 auto;
 	}
-
-	// .icon__svg {
-	// 	transition: order 1s ease-out;
-	// }
 
 }
 
@@ -138,13 +133,18 @@
 
 .project__name {
 	color: $orange;
-	font-weight: 900;
+	font-weight: 700;
 	letter-spacing: 0.1em;
 	font-size: 1.25rem;
 
 	@include media-xl {
 		font-size: 2rem;
 	}
+}
+
+.project__special {
+	color: $orange;
+	font-weight: 700;
 }
 
 .project__links {
@@ -206,17 +206,28 @@
 	margin-top: $offset-basic * 8;
 
 	display: flex;
-	flex-direction: column;
+	// flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
 
 	@include media-lg {
-		flex-direction: row;
+		// flex-direction: row;
 	}
 }
 
 .future__card {
-	// width: 96%;
+	margin-top: $offset-basic * 8;
 
-	// @include media-lg {
-	// 	width: 48%;
-	// }
+	width: 96%;
+
+	@include media-sm {
+		width: 48%;
+	}
+
+	@include media-lg {
+	margin-top: 2vw;
+	width: 32%;
+	}
 }

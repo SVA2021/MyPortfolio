@@ -748,8 +748,8 @@ a:focus {
             align-items: stretch;
     justify-items: center;
     gap: 1%;
-    -ms-grid-columns: 50% 20% auto;
-        grid-template-columns: 50% 20% auto;
+    -ms-grid-columns: 45% 15% auto;
+        grid-template-columns: 45% 15% auto;
         grid-template-areas: 'title title title' 'gallery techno description' 'gallery techno description' 'gallery techno links';
   }
 }
@@ -880,7 +880,7 @@ a:focus {
 
 .project__name {
   color: #F97F29;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.1em;
   font-size: 1.25rem;
 }
@@ -889,6 +889,11 @@ a:focus {
   .project__name {
     font-size: 2rem;
   }
+}
+
+.project__special {
+  color: #F97F29;
+  font-weight: 700;
 }
 
 .project__links {
@@ -962,18 +967,35 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.future__card {
+  margin-top: 32px;
+  width: 96%;
+}
+
+@media (min-width: 750px) {
+  .future__card {
+    width: 48%;
+  }
 }
 
 @media (min-width: 1240px) {
-  .future__inner {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  .future__card {
+    margin-top: 2vw;
+    width: 32%;
   }
 }
 
