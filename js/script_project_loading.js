@@ -20,6 +20,11 @@ const PROJECT_ACTUAL = [
 		imgQty: 17,
 		webSkills: ['html5', 'css3', 'js', 'git', 'markdown', 'github', 'sass',]
 	},
+	{
+		name: 'portfolio',
+		imgQty: 1,
+		webSkills: ['html5', 'css3', 'js', 'git', 'markdown', 'github', 'sass',]
+	},
 ]
 
 const setProject = (project) => {
