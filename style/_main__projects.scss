@@ -218,6 +218,23 @@
 	font-weight: 700;
 }
 
+.project__special--link {
+	display: block;
+	width: fit-content;
+	padding: $offset-basic;
+	color: $orange;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: $border-radius-default;
+	transition: all 0.25s ease-in-out;
+
+	&:hover,
+	&:focus {
+		background-color: $green;
+		color: $dark;
+	}
+}
+
 .project__links {
 	margin: $offset-basic;
 	grid-area: links;
