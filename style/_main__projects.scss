@@ -37,6 +37,7 @@
 
 .project__gallery {
 	grid-area: gallery;
+	align-self: center;
 	margin: $offset-basic *2 auto;
 	width: 96%;
 	box-shadow: 2px 2px 10px $light, -2px -2px 10px $light;
@@ -207,6 +208,7 @@
 	font-weight: 700;
 	letter-spacing: 0.1em;
 	font-size: 1.25rem;
+	text-transform: capitalize;
 
 	@include media-xl {
 		font-size: 2rem;
@@ -214,8 +216,13 @@
 }
 
 .project__special {
+	margin-right: $offset-basic;
 	color: $orange;
 	font-weight: 700;
+
+	@include media-xl {
+		margin-right: 1rem;
+	}
 }
 
 .project__special--link {
@@ -297,8 +304,8 @@
 	// flex-direction: column;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-evenly;
+	// align-items: center;
+	justify-content: space-around;
 
 	@include media-lg {
 		// flex-direction: row;
@@ -314,8 +321,8 @@
 		width: 48%;
 	}
 
-	@include media-lg {
-		margin-top: 2vw;
-		width: 32%;
-	}
+	// @include media-lg {
+	// 	margin-top: 2vw;
+	// 	width: 32%;
+	// }
 }
