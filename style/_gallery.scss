@@ -11,7 +11,7 @@
 		height: 100%;
 		width: 100%;
 		background-color: transparent;
-		z-index: $z-index-modal;
+		z-index: $z-index-fullscreen;
 		box-shadow: none;
 		backdrop-filter: blur(20px);
 
@@ -96,7 +96,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
-	z-index: $z-index-notification;
+	// z-index: $z-index-notification;
 
 	transition: all 0.3s ease-in-out;
 
