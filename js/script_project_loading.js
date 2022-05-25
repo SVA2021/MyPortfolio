@@ -62,8 +62,8 @@ const setProject = (project) => {
 				src="./img/${name}/origin/${name}_${i}.png">`);
 	}
 
+	skills.classList.add('icon__set');
 	for (const item of webSkills) {
-		skills.classList.add('icon__set');
 		skills.insertAdjacentHTML('beforeend',
 			`<svg class="icon__svg" role="img" aria-label="js"><use href="#${item}"></use></svg>`
 		);
@@ -72,4 +72,16 @@ const setProject = (project) => {
 
 for (const item of PROJECT_ACTUAL) {
 	setProject(item);
+}
+
+//***My Skills icons loading */
+
+const about = document.getElementById('about');
+const mySkills = about.querySelector('.skills__set');
+
+for (const item of WEB_SKILLS_FULL) {
+	mySkills.classList.add('icon__set');
+	mySkills.insertAdjacentHTML('beforeend',
+		`<svg class="icon__svg" role="img" aria-label="js"><use href="#${item}"></use></svg>`
+	);
 }
