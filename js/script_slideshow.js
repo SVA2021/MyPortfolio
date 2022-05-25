@@ -56,8 +56,8 @@ const showGallery = (galleryWrapper) => {
 
 	slideShowBtn.addEventListener('click', () => {
 		isActiveSlideShow = !isActiveSlideShow;
-		prevBtn.disabled = isActiveSlideShow;
-		nextBtn.disabled = isActiveSlideShow;
+		prevBtn.hidden = isActiveSlideShow;
+		nextBtn.hidden = isActiveSlideShow;
 		slideShowBtn.classList.toggle('gallery__btn--active');
 		slideShow();
 	});

@@ -22,6 +22,11 @@
 			border: 1px solid $orange;
 			box-shadow: 2px 2px 10px $orange, -2px -2px 10px $orange;
 		}
+
+		.gallery__navigation {
+			z-index: $z-index-notification;
+		}
+
 	}
 
 	&:hover {
@@ -97,7 +102,7 @@
 	align-items: center;
 	justify-content: space-evenly;
 	// z-index: $z-index-notification;
-
+	z-index: 5;
 	transition: all 0.3s ease-in-out;
 
 	@include media-sm {
@@ -117,7 +122,7 @@
 	@include borderDefault;
 	margin: $offset-basic *2 auto;
 	padding: $offset-basic;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.1s linear;
 	color: $dark;
 	background-color: $green;
 	font: 500 $font-size-text $font-titles;
@@ -140,8 +145,8 @@
 		background-color: $orange;
 	}
 
-	&:disabled {
-		display: none;
-	}
+	// &:disabled {
+	// 	display: none;
+	// }
 
 }

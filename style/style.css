@@ -756,6 +756,10 @@ a:focus {
           box-shadow: 2px 2px 10px #F97F29, -2px -2px 10px #F97F29;
 }
 
+.gallery.showFull .gallery__navigation {
+  z-index: 100;
+}
+
 .gallery:hover .gallery__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -853,6 +857,7 @@ a:focus {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  z-index: 5;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -877,8 +882,8 @@ a:focus {
   border-radius: 4px;
   margin: 8px auto;
   padding: 4px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
   color: #19283F;
   background-color: #DFF296;
   font: 500 1rem "Roboto", Arial, sans-serif;
@@ -904,10 +909,6 @@ a:focus {
 
 .gallery__btn.gallery__btn--active {
   background-color: #F97F29;
-}
-
-.gallery__btn:disabled {
-  display: none;
 }
 
 .actual {
