@@ -22,7 +22,7 @@ const PROJECT_ACTUAL = [
 	},
 	{
 		name: 'portfolio',
-		imgQty: 1,
+		imgQty: 2,
 		webSkills: ['html5', 'css3', 'js', 'git', 'markdown', 'github', 'sass',]
 	},
 ]
