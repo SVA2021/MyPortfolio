@@ -1129,16 +1129,21 @@ a:focus {
   width: 96%;
 }
 
-@media (min-width: 1240px) {
-  .about__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .about__bio {
   margin: 32px auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.2rem;
+  font-weight: 600;
   line-height: 2rem;
 }
 
@@ -1154,7 +1159,7 @@ a:focus {
 
 @media (min-width: 1240px) {
   .about__skills {
-    width: 50%;
+    width: 30%;
   }
 }
 

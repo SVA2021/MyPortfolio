@@ -3,20 +3,23 @@
 }
 
 .about__inner {
-	// display: flex;
+	display: flex;
+	flex-wrap: wrap;
 	// align-items: stretch;
 	// justify-content: center;
 	// flex-direction: column;
 
 	@include media-lg {
-		display: flex;
+		// display: flex;
 		// flex-direction: row;
 	}
 }
 
 .about__bio {
 	margin: $offset-basic *8 auto;
-
+	flex: 1;
+	font-size: 1.2rem;
+	font-weight: 600;
 	@include media-lg {
 		// width: 50%;
 		font-size: 1.5rem;
@@ -27,9 +30,10 @@
 
 .about__skills {
 	margin: $offset-basic *8 auto;
+	// flex: 0 0 auto;
 
 	@include media-lg {
-		width: 50%;
+		width: 30%;
 	}
 }
 
