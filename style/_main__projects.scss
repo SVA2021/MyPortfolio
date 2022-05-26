@@ -43,6 +43,11 @@
 	box-shadow: 2px 2px 10px $light, -2px -2px 10px $light;
 	border-radius: $border-radius-default;
 	height: 500px;
+
+
+	@include media-xl {
+		height: 750px;
+	}
 }
 
 // .gallery__img {
