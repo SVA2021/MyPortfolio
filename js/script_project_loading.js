@@ -1,6 +1,21 @@
 'use strict'
 //*******************PROJECT ACTUAL**********************/
 
+const LANGUAGE = document.documentElement.lang;
+
+const PARAMETER = {
+	en: {
+		navigation: ['prev', 'fullscreen', 'slideshow', 'next'],
+		description: [`project test results`, `project main screen`, `project additional screenshot`]
+	},
+	ru: {
+		navigation: ['сюда', 'полный экран', 'слайдшоу', 'туда'],
+		description: [`результаты теста проекта`, `главный экран проекта`, `дополнительный скриншот проекта`]
+	},
+}
+
+let langSet = PARAMETER[LANGUAGE] || 'en';
+
 const WEB_SKILLS_FULL = ['html5', 'css3', 'js', 'git', 'markdown', 'cssModules', 'github', 'react', 'redux', 'sass', 'typescript'];
 
 //! update this array to add new project
@@ -39,17 +54,17 @@ const setProject = (project) => {
 	gallery.classList.add('gallery');
 	gallery.insertAdjacentHTML('afterbegin',
 		`<div class="gallery__navigation" aria-hidden="true">
-		<button class="gallery__btn gallery__prev" aria-hidden="true">prev</button>
-		<button class="gallery__btn gallery__fullscreen" aria-hidden="true">fullscreen</button>
-		<button class="gallery__btn gallery__slideshow" aria-hidden="true">slideshow</button>
-		<button class="gallery__btn gallery__next" aria-hidden="true">next</button>
+		<button class="gallery__btn gallery__prev" aria-hidden="true">${langSet.navigation[0]}</button>
+		<button class="gallery__btn gallery__fullscreen" aria-hidden="true">${langSet.navigation[1]}</button>
+		<button class="gallery__btn gallery__slideshow" aria-hidden="true">${langSet.navigation[2]}</button>
+		<button class="gallery__btn gallery__next" aria-hidden="true">${langSet.navigation[3]}</button>
 		</div>`
 	);
 
 	for (let i = 0; i < qty; i++) {
 
-		let alt = (i === 0) ? `test results` :
-			(i === 1) ? `main screen` : `additional screenshot`;
+		let alt = (i === 0) ? langSet.description[0] :
+			(i === 1) ? langSet.description[1] : langSet.description[2];
 
 		gallery.insertAdjacentHTML('beforeend',
 			`<picture class="gallery__pic">
@@ -58,7 +73,7 @@ const setProject = (project) => {
 			<source media="(max-width: 1200px)" srcset="./img/${name}/720/${name}_${i}_720.webp" type="image/webp">
 			<source media="(max-width: 1200px)" srcset="./img/${name}/720/${name}_${i}_720.png" type="image/png">
 			<source srcset="./img/${name}/origin/${name}_${i}.webp" type="image/webp">
-			<img class="gallery__img" alt="project ${alt}" loading="lazy"
+			<img class="gallery__img" alt="${alt}" loading="lazy"
 				src="./img/${name}/origin/${name}_${i}.png">`);
 	}
 
