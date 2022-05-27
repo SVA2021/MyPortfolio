@@ -4,6 +4,7 @@
 .header {
 	position: fixed;
 	height: 4rem;
+	min-height: 4rem;
 	top: 0;
 	padding: $offset-basic *2 0;
 	z-index: $z-index-navigation;
