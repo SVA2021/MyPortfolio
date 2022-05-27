@@ -292,6 +292,7 @@ a:focus {
 .header {
   position: fixed;
   height: 4rem;
+  min-height: 4rem;
   top: 0;
   padding: 8px 0;
   z-index: 10;
@@ -575,6 +576,7 @@ a:focus {
 }
 
 .hero__word {
+  display: block;
   font: 900 2rem "Roboto", Arial, sans-serif;
   letter-spacing: -0.35em;
   line-height: 1.3em;
@@ -640,8 +642,8 @@ a:focus {
 }
 
 .hero__profession:hover {
-  text-shadow: 1px 1px 5px #DFF296;
-  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 2px #DFF296;
+  letter-spacing: 0.05em;
 }
 
 @media (min-width: 752px) {

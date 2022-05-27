@@ -292,6 +292,7 @@ a:focus {
 .header {
   position: fixed;
   height: 4rem;
+  min-height: 4rem;
   top: 0;
   padding: 8px 0;
   z-index: 10;
