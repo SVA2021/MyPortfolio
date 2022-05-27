@@ -9,6 +9,7 @@
 .hero__name {}
 
 .hero__word {
+	display: block;
 	font: 900 2rem $font-titles;
 	letter-spacing: -0.35em;
 	line-height: 1.3em;
@@ -64,8 +65,8 @@
 	transition: all 0.2s ease-in-out;
 
 	&:hover {
-		text-shadow: 1px 1px 5px $green;
-		letter-spacing: 0.1em;
+		text-shadow: 1px 1px 2px $green;
+		letter-spacing: 0.05em;
 	}
 
 	@include media-sm {
