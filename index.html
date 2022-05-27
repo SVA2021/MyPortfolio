@@ -17,6 +17,9 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="./style/style.css">
 	<title>SVA_portfolio</title>
+</head>
+
+<body>
 	<svg id="socialContacts" xmlns="http://www.w3.org/2000/svg">
 
 		<symbol id="telegram" viewBox="0 0 496 512">
@@ -114,10 +117,10 @@
 			</g>
 		</symbol>
 
-		<symbol id="github" viewBox="0 0 496 512">
+		<!-- <symbol id="github" viewBox="0 0 496 512">
 			<path
 				d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-		</symbol>
+		</symbol> -->
 
 		<symbol id="react" viewBox="0 0 512 512">
 			<path
@@ -141,9 +144,6 @@
 		</symbol>
 
 	</svg>
-</head>
-
-<body>
 	<header class="header">
 		<div class="header__inner wrapper">
 			<div class="header__logo logo">
@@ -151,7 +151,7 @@
 				<span class="logo__item">V</span>
 				<span class="logo__item">A</span>
 			</div>
-			<nav class="header__menu menu" role="navigation">
+			<nav class="header__menu menu">
 				<ul class="menu__body">
 					<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
 					<li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
@@ -172,11 +172,11 @@
 	</header>
 	<main class="wrapper">
 		<section class="hero" id="hero">
-			<div class="hero__name">
-				<div class="hero__word"><span class="hero__letter">S</span>ofronov</div>
-				<div class="hero__word"><span class="hero__letter">V</span>italiy</div>
-				<div class="hero__word"><span class="hero__letter">A</span>lexandrovich</div>
-			</div>
+			<h1 class="hero__name">
+				<span class="hero__word"><span class="hero__letter">S</span>ofronov</span>
+				<span class="hero__word"><span class="hero__letter">V</span>italiy</span>
+				<span class="hero__word"><span class="hero__letter">A</span>lexandrovich</span>
+			</h1>
 			<div class="hero__profession">Front-End Developer</div>
 			<ul class="hero__social">
 				<li class="hero__item">
@@ -236,24 +236,6 @@
 								UI/ UX designed by me.
 							</p>
 						</div>
-						<!-- <div class="project__description">
-							<p><span class="project__name">CSS EDU</span> проект это SPA (Single Page Application), в котором
-								демонстрируется работа и влияние некоторых свойств CSS и методов JavaScript. <br>
-								CSS: основные пункты по позиционированию элементов, селекторы CSS, анимация различных свойств, работы с
-								изображениями и градиентами. <br>JS: методы массивов и строк.
-							</p>
-							<p><span class="project__special">Почему?</span>Цель проекта - самообразование, поэтому были
-								выбраны для закрепления одни из самых часто используемых параметров. Также в будущем планирую
-								использовать его как базу для отработки новых технологий и приемов.
-							</p>
-							<p><span class="project__special">Технологии</span>React, Redux (redux-toolkit), Typescript, SASS,
-								CSSmodules, Git, GitHub (+&nbsp;GitHub.Pages).
-							</p>
-							<p><span class="project__special">Дополнительно</span>React-spring для реализации анимаций.
-								<br>
-								Дизайн UX/ UI разработан мной. 
-							</p>
-						</div> -->
 						<div class="project__links">
 							<a href="https://github.com/SVA2021/CSS-EDU/tree/development" class="project__link"
 								target="_blank">code</a>
@@ -261,12 +243,10 @@
 							<a href="https://sva2021.github.io/CSS-EDU/" class="project__link" target="_blank">www</a>
 						</div>
 					</div>
-
 					<div class="project__card" id="galeoncar">
 						<h4 class="project__title header__subtitle">Galeoncar</h4>
 						<div class="project__gallery"></div>
 						<div class="project__technologies"></div>
-
 						<div class="project__description">
 							<p><span class="project__name">Galeoncar</span> project is the multipage adaptive landing of premium car
 								rent service.<br>
@@ -287,33 +267,16 @@
 									class="project__special--link">link to mockup (Figma)</a>
 							</p>
 						</div>
-						<!-- rus -->
-						<!-- <div class="project__description">
-							<p><span class="project__name">Galeoncar</span> проект это адаптивный мультистраничный лендинг сервиса по прокату премиум автомобилей.<br>
-							Дизайн данного проекта изначально был очень хорошо проработан и содержал много интересных задач в виде различных функциональных элементов, а также большого наличия графики.
-							</p>
-							<p><span class="project__special">Почему?</span>Цель проекта - практическая работа с SASS и в целом с "чистым" HTML5. Использование части кода по возможности. Работа с разными подходами к организации кода (например, вложенность медиа запросов сделана 2мя способами: 1.&nbsp;весь код  секции документа внутри медиа. 2.&nbsp; отдельные медиа для каждого класса.)
-							</p>
-							<p><span class="project__special">Технологии</span>HTML5, CSS3, JS, SASS, Git, GitHub (+&nbsp;GitHub.Pages), BEM.
-							</p>
-							<p><span class="project__special">Дополнительно</span>
-								БЭМ-именование классов, адаптивность, доступность.
-								<a href="https://www.figma.com/file/5NRQHqr7PEOYF5Roi3djy6/Galeoncar?node-id=87%3A2372" target="_blank" class="project__special--link">ссылка на исходный макет (Figma)</a>
-							</p>
-						</div> -->
-
 						<div class="project__links">
 							<a href="https://github.com/SVA2021/galeoncar" class="project__link" target="_blank">code</a>
 							<a href="https://www.youtube.com/" class="project__link" target="_blank">video</a>
 							<a href="https://sva2021.github.io/galeoncar/" class="project__link" target="_blank">www</a>
 						</div>
 					</div>
-
 					<div class="project__card" id="raw">
 						<h4 class="project__title header__subtitle">RAW</h4>
 						<div class="project__gallery"></div>
 						<div class="project__technologies"></div>
-
 						<div class="project__description">
 							<p><span class="project__name">RAW</span> project is SPA (Single Page Application), which contains 4
 								different services with asynchronous functionality inside. 3 of them received data from external resources.<br>
@@ -337,40 +300,16 @@
 								UI/ UX designed by me.
 							</p>
 						</div>
-						<!-- <div class="project__description">
-							<p><span class="project__name">RAW</span> проект это SPA (Single Page Application), в котором собраны 4
-								различных сервиса с асинхронной работой внутри. 3 из них получают данные с помощью сторонних
-								ресурсов.<br>
-								Помодоро: популярный метод самоорганизации<br>
-								Погода: всегда нужная инфо, поиск по городу.<br>
-								Праздники: всего мира (неделя) или одной страны (год).<br>
-								Курс валют: всегда меняется, полезно следить.<br>
-							</p>
-							<p><span class="project__special">Почему?</span>Цель проекта - самообразование в области работы с
-								независимыми от меня внешними REST API. С возможностью в дальнейшем использовать отдельные
-								модули(Widgets) в новых проектах.
-							</p>
-							<p><span class="project__special">Технологии</span>React (+ Axios), Redux (Redux-Toolkit, Redux-Thunk),
-								Typescript, SASS,
-								CSSmodules, Git, GitHub (+&nbsp;GitHub.Pages).
-							</p>
-							<p><span class="project__special">Дополнительно</span>classNames для работы со стилями. flag icons для отображения флагов государств.
-								<br>
-								Дизайн UX/ UI разработан мной. 
-							</p>
-						</div> -->
 						<div class="project__links">
 							<a href="https://github.com/SVA2021/raw/tree/development" class="project__link" target="_blank">code</a>
 							<a href="https://www.youtube.com/" class="project__link" target="_blank">video</a>
 							<a href="https://sva2021.github.io/raw/" class="project__link" target="_blank">www</a>
 						</div>
 					</div>
-
 					<div class="project__card" id="portfolio">
 						<h4 class="project__title header__subtitle">My Portfolio</h4>
 						<div class="project__gallery"></div>
 						<div class="project__technologies"></div>
-
 						<div class="project__description">
 							<p><span class="project__name">Portfolio</span> project is the multipage adaptive landing of me as
 								front-end developer.<br>
@@ -386,20 +325,6 @@
 								previous projects.
 							</p>
 						</div>
-						<!-- rus -->
-						<!-- <div class="project__description">
-							<p><span class="project__name">Portfolio</span> проект это адаптивный мультистраничный лендинг меня как фронтенд-разработчика.<br>
-							</p>
-							<p><span class="project__special">Почему?</span>Цель проекта - собрать всю полезную информацию обо мне и моих навыках во фронтенде. Это поможет Вам понять, что я Вам нужен.
-							</p>
-							<p><span class="project__special">Технологии</span>HTML5, CSS3, JS, SASS, Git, GitHub (+&nbsp;GitHub.Pages), BEM.
-							</p>
-							<p><span class="project__special">Дополнительно</span>
-								БЭМ-именование классов, адаптивность, доступность.
-								Дизайн UX / UI полностью разработан мной с использованием опыт прошлых проектов.
-							</p>
-						</div> -->
-
 						<div class="project__links">
 							<a href="https://github.com/SVA2021/MyPortfolio/tree/master" class="project__link"
 								target="_blank">code</a>
@@ -407,14 +332,11 @@
 							<a href="https://sva2021.github.io/MyPortfolio/" class="project__link" target="_blank">www</a>
 						</div>
 					</div>
-
 				</div>
 			</div>
-
 			<div class="future">
 				<h3 class="header__title">future projects</h3>
 				<div class="future__inner">
-
 					<div class="future__card" id="future_movie">
 						<h4 class="project__title header__subtitle">movie catalog</h4>
 						<div class="project__description">
@@ -432,27 +354,7 @@
 								React-hook-form / Formik.
 							</p>
 						</div>
-						<!--! rus -->
-						<!-- <div class="project__description">
-							<p><span class="project__name">movie catalog</span>- каталог информации о разных кино (или
-								только одном сериале).
-							</p>
-							<p><span class="project__special">Почему?</span>В этом проекте я продолжу изучение и закрепление
-								знаний о библиотеке React. А именно работу с новыми хуками, контекстом, формами, стандартными сторонними
-								компонентами и API. Также начиная с этого проекта планирую обеспечивать минимальное, но достаточное
-								покрытие блоков кода тестами.
-							</p>
-							<p><span class="project__special">Технологии</span>React (+ Axios), Redux (Redux-Toolkit, Redux-Thunk),
-								Typescript, SASS,
-								CSSmodules, Git, GitHub (+&nbsp;GitHub.Pages).
-							</p>
-							<p><span class="project__special">новые навыки</span>Material UI, React-Test-Library / Jest,
-								React-hook-form / Formik.
-							</p>
-						</div> -->
-
 					</div>
-
 					<div class="future__card" id="future_book">
 						<h4 class="project__title header__subtitle">book catalog</h4>
 						<div class="project__description">
@@ -471,24 +373,7 @@
 							<p><span class="project__special">New skills</span> GraphQL (client), MobX.
 							</p>
 						</div>
-						<!--! rus -->
-						<!-- <div class="project__description">
-							<p><span class="project__name">book catalog</span>- каталог информации о разных книгах.
-							</p>
-							<p><span class="project__special">Почему?</span>В этом проекте я хочу взять за основу как можно больше
-								исходных данных из проекта "movie catalogue". и добавить к этому изучение основ MobX и GraphQL(client).
-								Книги могут быть заменены на что-то другое (зависит от наличия открытого GraphQL API).
-							</p>
-							<p><span class="project__special">Технологии:</span>React, React-Testб Material UI, Typescript, SASS,
-								CSSmodules, Git, GitHub
-								(+&nbsp;GitHub.Pages).
-							</p>
-							<p><span class="project__special">новые навыки:</span>GraphQL(client), MobX.
-							</p>
-						</div> -->
-
 					</div>
-
 					<div class="future__card" id="future_english">
 						<h4 class="project__title header__subtitle">english lessons</h4>
 						<div class="project__description">
@@ -504,20 +389,7 @@
 							<p><span class="project__special">New skills</span> Gulp (if I find an excuse).
 							</p>
 						</div>
-						<!--! rus -->
-						<!-- <div class="project__description">
-							<p><span class="project__name">english lessons</span>- лендинг учителя (или школы) по изучению английского языка.
-							</p>
-							<p><span class="project__special">Почему?</span>В этом проекте я хочу закрепить работу с аналитикой, картами, анимациями, глобальными переменными CSS, переключателями тем.
-							</p>
-							<p><span class="project__special">Технологии:</span>HTML5, CSS3, JS, SASS, Git, GitHub (+&nbsp;GitHub.Pages), BEM.
-							</p>
-							<p><span class="project__special">новые навыки:</span>Gulp (если найду этому оправдание).
-							</p>
-						</div> -->
-
 					</div>
-
 					<div class="future__card" id="future_repair">
 						<h4 class="project__title header__subtitle">repair service</h4>
 						<div class="project__description">
@@ -533,20 +405,7 @@
 							<p><span class="project__special">New skills</span> Gulp (if I find an excuse).
 							</p>
 						</div>
-						<!--! rus -->
-						<!-- <div class="project__description">
-							<p><span class="project__name">repair service</span> - лендинг ремонтного сервиса (например холодильников и стиральных машин).
-							</p>
-							<p><span class="project__special">Почему?</span> В этом проекте я хочу максимально переиспользовать код и знания из проекта "English lessons".
-							</p>
-							<p><span class="project__special">Технологии</span> HTML5, CSS3, JS, SASS, Git, GitHub (+&nbsp;GitHub.Pages), BEM.
-							</p>
-							<p><span class="project__special">новые навыки</span> Gulp (если найду этому оправдание).
-							</p>
-						</div> -->
-
 					</div>
-
 					<div class="future__card" id="future_onlineShop">
 						<h4 class="project__title header__subtitle">online shop</h4>
 						<div class="project__description">
@@ -561,23 +420,7 @@
 							<p><span class="project__special">New skills</span> NodeJS, NextJS.
 							</p>
 						</div>
-						<!--! rus -->
-						<!-- <div class="project__description">
-							<p><span class="project__name">online shop</span>- онлайн магазин по продаже особенных или наоборот широко
-								распространенных товаров.
-							</p>
-							<p><span class="project__special">Почему?</span>В этом проекте я продолжу изучение React и начну изучать
-								SSR (Server Side Rendering) на основе NodeJS + NextJS.
-							</p>
-							<p><span class="project__special">Технологии:</span>React, Redux, Typescript, SASS, CSSmodules, Git,
-								GitHub (+&nbsp;GitHub.Pages).
-							</p>
-							<p><span class="project__special">новые навыки:</span>NodeJS, NextJS.
-							</p>
-						</div> -->
-
 					</div>
-
 					<div class="future__card" id="future_realty">
 						<h4 class="project__title header__subtitle">realty agency</h4>
 						<div class="project__description">
@@ -592,21 +435,7 @@
 							<p><span class="project__special">New skills</span> NodeJS, NextJS.
 							</p>
 						</div>
-						<!--! rus -->
-						<!-- <div class="project__description">
-							<p><span class="project__name">realty agency</span>- агентство недвижимости сети новостроек.
-							</p>
-							<p><span class="project__special">Почему?</span>В этом проекте я хочу взять за основу как можно больше исходных данных из проекта "online shop".
-							</p>
-							<p><span class="project__special">Технологии:</span>React, Redux, Typescript, SASS, CSSmodules, Git,
-								GitHub (+&nbsp;GitHub.Pages).
-							</p>
-							<p><span class="project__special">новые навыки:</span>NodeJS, NextJS.
-							</p>
-						</div> -->
-
 					</div>
-
 				</div>
 			</div>
 		</section>
@@ -621,14 +450,6 @@
 						I constantly strive to understand something new in technics and not only.
 						Now I want to learn more about the structure of one of the most used technologies in the world in the 21st
 						century - the Internet.</p>
-					<!-- rus -->
-					<!-- <p>Привет. Меня зовут Виталий и я Front-end разработчик-самоучка.<br>
-						Мне нравится процесс превращения идеи в реальную вещь, деталь, устройство.
-						<br>
-						По этой причине я до этого 10 лет работал технологом.<br>
-						Я постоянно стремлюсь понять что-то новое в технике и не только.
-						Теперь я хочу больше узнать об устройстве одной из самых используемых технологий в мире в 21 веке -
-						Интернет.</p> -->
 				</div>
 				<div class="about__skills">
 					<h3 class="header__subtitle">skills</h3>
@@ -671,9 +492,7 @@
 		<section class="section__offset contacts">
 			<h2 class="section__header" id="contacts">contacts</h2>
 			<div class="contacts__inner">
-
 				<div class="contacts__form form__wrapper">
-					<!-- <form class="form__body" name="contacts" action="#" autocomplete="off"> -->
 						<form class="form__body" name="contacts" autocomplete="off" action="https://smartforms.dev/submit/626ce7227a195017922e26e2" method="POST">
 						<label class="form__label" for="name">Name<sup class="special__mark">*</sup></label>
 						<input class="form__item" placeholder=" " type="text" id="name" minlength="3" required aria-required="true"
@@ -691,7 +510,6 @@
 					</form>
 				</div>
 				<div class="contacts__links social">
-
 					<ul class="social__body">
 						<li class="social__item">
 							<a href="https://t.me/SVA_1985" class="social__link">
