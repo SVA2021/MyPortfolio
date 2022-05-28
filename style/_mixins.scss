@@ -41,7 +41,6 @@
 
 //******************** borders ***********************/
 
-//borders
 @mixin borderDefault {
   border: $size-default-border solid $light;
   border-radius: $border-radius-default;

@@ -24,8 +24,6 @@
 	}
 }
 
-// .header__logo {}
-
 .logo {
 	font-family: $font-titles;
 	font-weight: 900;
@@ -57,11 +55,9 @@
 	position: relative;
 	display: none;
 
-	// @include media-xs {}
 	@include media-sm {
 		display: block;
 	}
-	// @include media-lg {}
 }
 
 .menu__body {
@@ -75,7 +71,6 @@
 		margin-top: 0;
 		flex-direction: row;
 	}
-	// @include media-lg {	}
 }
 
 .menu__item {

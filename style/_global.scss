@@ -12,18 +12,6 @@ body {
 	scroll-behavior: smooth;
 	font-size: $html-font-size;
 	font-family: $font-text;
-
-	// @include media-sm {
-	// 	font-size: $html-font-size-sm;
-	// }
-
-	// @include media-lg {
-	// 	font-size: $html-font-size-lg;
-	// }
-
-	// @include media-xl {
-	// 	font-size: $html-font-size-xl;
-	// }
 }
 
 main {
@@ -36,8 +24,6 @@ a:focus{
 }
 
 .wrapper {
-	// outline: 0.5px solid yellow;
-
 	flex: 1 0 auto;
 	margin: 0 auto;
 	padding-left: 2%;
@@ -45,10 +31,6 @@ a:focus{
 	position: relative;
 	width: 100%;
 	min-width: $mq-xs;
-
-	@include media-xs {
-		// width: $mq-xs;
-	}
 
 	@include media-sm {
 		width: $mq-sm;
@@ -166,8 +148,6 @@ a:focus{
 		font-size: $font-size-subtitle * 2;
 	}
 }
-
-//********* buttons ***********************************//
 
 //********* Sections ***********************************//
 

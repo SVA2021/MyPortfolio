@@ -2,11 +2,8 @@
 @import './_mixins';
 
 .hero {
-	// outline: 0.5px solid red;
 	margin: 4vw auto;
 }
-
-.hero__name {}
 
 .hero__word {
 	display: block;
@@ -83,7 +80,6 @@
 
 	display: flex;
 	flex-direction: row;
-	// flex-wrap: wrap;
 
 }
 

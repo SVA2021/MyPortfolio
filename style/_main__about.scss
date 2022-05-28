@@ -60,15 +60,10 @@
 
 .about__img {
 	width: 100%;
-	// height: 100%;
 	height: max-content;
 	border-radius: $size-section-border;
 	border: 2px solid $orange;
 }
-
-// .github--stats {
-// 	aspect-ratio: 4;
-// }
 
 .certificates {
 	aspect-ratio: 18/5;
@@ -96,7 +91,6 @@
 	}
 
 	@include media-xl {
-	// height: auto;
 	width: 48%;
 	}
 }
