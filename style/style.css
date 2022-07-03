@@ -1114,14 +1114,6 @@ a:focus {
   }
 }
 
-@media (min-width: 1900px) {
-  .project__link {
-    padding: 16px;
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-}
-
 .future {
   margin-top: 64px;
 }
